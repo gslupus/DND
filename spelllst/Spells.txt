@@ -1,0 +1,742 @@
+ADVENTURES	1	Alteration	Catapult	150 feet	VS	1 round	1	One object	None	NO
+ADVENTURES	1	Alteration	Corpselight	10 yards/level	VSM	1 turn/level	1	One 
+body/level	None	NO
+ADVENTURES	1	Alteration	Scatterspray	10 yards/level	VSM	1 round	1	10 foot 
+radius	Neg.	NO
+ADVENTURES	1	Divination	Know School	120 yards	VSM	1 round	1	One 
+target	None	NO
+ADVENTURES	1	Evocation	Snilloc's Snowball	20 
+yards/level	VSM	Instantaneous	1	One target or creature	None	NO
+ADVENTURES	1	Necromancy	Corpselight	10 yards/level	VSM	1 turn/level	1	One 
+body/level	None	NO
+BARDS	1	Abjuration	Sound Bubble	0	VSM	10 rounds + 1 
+round/level	1	Special	None	NO
+BARDS	1	Alteration	Alter Instrument	Touch	VS	1 turn/level	1	1 
+instrument	None	NO
+BARDS	1	Evocation	Sound Bubble	0	VSM	10 rounds + 1 
+round/level	1	Special	None	NO
+DRACONOMICON	1	Alteration	Calm	0	V	Concentration	1	Caster	None	NO
+DROW	1	Alteration	Spidereyes	Touch	VSM	1 round/level	1	Special	None	NO
+HARPERS	1	Abjuration	Sound Bubble	0	VSM	10 rounds + 1 
+round/level	1	Special	None	NO
+HARPERS	1	Alteration	Alter Instrument	Touch	VS	1 turn/level	1	1 
+instrument	None	NO
+HARPERS	1	Evocation	Sound Bubble	0	VSM	10 rounds + 1 
+round/level	1	Special	None	NO
+PHB	1	Abjuration	Alarm	10 yards	VSM	4 hours +1/2 hour/level	1 round	up to a 
+20 foot cube	None	NO
+PHB	1	Abjuration	Protection From Evil	Touch	VSM	2 rounds/level	1	creature 
+touched	None	YES
+PHB	1	Abjuration	Protection From Good	Touch	VSM	2 rounds/level	1	creature 
+touched	None	YES
+PHB	1	All Schools	Cantrip	10 feet	VS	1 hour/level	1	Special	None	NO
+PHB	1	Alteration	Affect Normal Fires	5 yards/level	VS	2 rounds/level	1	10 
+foot radius	None	NO
+PHB	1	Alteration	Burning Hands	0	VS	Instantaneous	1	The caster	1/2	NO
+PHB	1	Alteration	Color Spray	0	VSM	Instantaneous	1	5' X 20' X 20' 
+wedge	Special	NO
+PHB	1	Alteration	Comprend Language	Touch	VSM	5 rounds/level	1 round	1 
+speaking creature or written object	None	YES
+PHB	1	Alteration	Confuse Language	Touch	VSM	5 rounds/level	1 round	1 
+speaking creature or written object	None	YES
+PHB	1	Alteration	Dancing Lights	40 yards + 10 yards/level	VSM	2 
+rounds/level	1	Special	None	NO
+PHB	1	Alteration	Enlarge	5 yards/level	VSM	5 rounds/level	1	1 creature or 
+object	Neg.	YES
+PHB	1	Alteration	Erase	30 yards	VS	Permanent	1	1 scroll or 2 
+pages	Special	NO
+PHB	1	Alteration	Feather Fall	10 yards/level	V	1 
+round/level	1	Special	None	NO
+PHB	1	Alteration	Gaze Reflection	0	VS	2 rounds + 1 
+round/level	1	Special	None	NO
+PHB	1	Alteration	Hold Portal	20 yards/level	V	1 round/level	1	20 square 
+feet/level	None	NO
+PHB	1	Alteration	Jump	Touch	VSM	1d3 rounds + 1 round/level	1	Creature 
+touched	None	NO
+PHB	1	Alteration	Light	60 yards	VM	1 turn/level	1	20 foot radius 
+globe	Special	NO
+PHB	1	Alteration	Mending	30 yards	VSM	Permanent	1	1 object	None	NO
+PHB	1	Alteration	Message	0	VSM	5 rounds/level	1	Special	None	NO
+PHB	1	Alteration	Reduce	5 yards/level	VSM	5 rounds/level	1	1 creature or 
+object	Neg.	YES
+PHB	1	Alteration	Shocking Grasp	Touch	VS	Special	1	Creature touched	None	NO
+PHB	1	Alteration	Spider Climb	Touch	VSM	3 rounds + 1 round/level	1	Creature 
+touched	Neg.	NO
+PHB	1	Alteration	Wizard Mark	Touch	VSM	Permanent	1	up to 1 square 
+foot	None	NO
+PHB	1	Conjuration	Armor	Touch	VSM	Special	1 round	1 creature	None	NO
+PHB	1	Conjuration	Grease	10 yards	VSM	3 rounds + 1 round/level	1	10' X 10' 
+square area	Special	NO
+PHB	1	Conjuration/Summoning	Find Familiar	1 mile/level	VSM	Special	2d12 
+hours	1 familiar	Special	NO
+PHB	1	Conjuration/Summoning	Mount	10 yards	VSM	2 hours + 1 hour/level	1 
+turn	1 mount	None	NO
+PHB	1	Conjuration/Summoning	Unseen Servant	0	VSM	1 hour + 1 turn/level	1	30 
+foot radius	None	NO
+PHB	1	Divination	Detect Magic	0	VS	2 rounds/level	1	10' path, 60' 
+long	None	NO
+PHB	1	Divination	Detect Undead	0	VSM	3 turns	1 round	60' + 10'/level	None	NO
+PHB	1	Divination	Identify	0	VSM	1 round/level	Special	1 item/level	None	NO
+PHB	1	Divination	Read Magic	0	VSM	2 rounds/level	1 round	Special	None	NO
+PHB	1	Enchantment	Taunt	60 yards	VSM	1 round	1	30 foot radius	Neg.	NO
+PHB	1	Enchantment/Charm	Charm Person	120 yards	VS	Special	1	1 person	Neg.	NO
+PHB	1	Enchantment/Charm	Friends	0	VSM	1d4 rounds + 1 round/level	1	60 foot 
+radius	Special	NO
+PHB	1	Enchantment/Charm	Hypnotism	5 yards	VS	1 round + 1 round/level	1	30 
+foot cube	Neg.	NO
+PHB	1	Enchantment/Charm	Sleep	30 yards	VSM	5 rounds/level	1	Special	None	NO
+PHB	1	Evocation	Alarm	10 yards	VSM	4 hours +1/2 hour/level	1 round	up to a 
+20 foot cube	None	NO
+PHB	1	Evocation	Magic Missile	60 yards + 10 yards/level	VS	Instantaneous	1	1 
+or more creature in a 10' cube	None	NO
+PHB	1	Evocation	Shield	0	VS	5 rounds/level	1	Special	None	NO
+PHB	1	Evocation	Tenser's Floating Disc	20 yards	VSM	3 turns + 1 
+turn/level	1	Special	None	NO
+PHB	1	Evocation	Wall of Fog	30 yards	VSM	2d4 rounds + 1 round/level	1	20' 
+cube + 10' cube/level	None	NO
+PHB	1	Illusion/Phantasm	Audible Glamer	60 yards + 10 yards/level	VSM	3 
+rounds/level	1	Hearing range	Special	NO
+PHB	1	Illusion/Phantasm	Change Self	0	VS	2d6 rounds + 2 rounds/level	1	The 
+caster	None	NO
+PHB	1	Illusion/Phantasm	Nystul's Magical Aura	Touch	VSM	1 day/level	1 
+round	Special	Special	NO
+PHB	1	Illusion/Phantasm	Phantasmal Force	60 yards + 10 
+yards/level	VSM	Special	1	400 sq.ft. + 100 sq.ft./level	Special	NO
+PHB	1	Illusion/Phantasm	Spook	0	VS	Special	1	1 creature within 30 
+feet	Neg.	NO
+PHB	1	Illusion/Phantasm	Ventriloquism	10 yards/level, Max 90 yards	VM	4 
+rounds + 1 round/level	1	1 creature or object	Special	NO
+PHB	1	Necromancy	Chill Touch	0	VS	3 rounds + 1 round/level	1	Ther 
+caster	Neg.	NO
+PHB	1	Necromancy	Detect Undead	0	VSM	3 turns	1 round	60' + 10'/level	None	NO
+TOME	1	Alteration	Fire Burst	5 yards/level	VS	Instantaneous	1	One 10' radius 
+circle	Neg.	NO
+TOME	1	Alteration	Fist of Stone	0	VS	1 round/level	1	The caster's 
+hand	None	NO
+TOME	1	Alteration	Lasting Breath	5 yards/level	VS	1d4 rounds + 1 
+round/level	1	One creature/level	None	NO
+TOME	1	Alteration	Metamorphose Liquids	Touch	VSM	Permanent	1 round	1 foot 
+cube/level	Special	NO
+TOME	1	Alteration	Murdock's Feathery Flyer	0	VSM	1 round/level	1	The 
+caster	None	NO
+TOME	1	Conjuration/Summoning	Conjure Spell Component	1 mile/level	VS	1 
+round	1	3 components/level	None	NO
+TOME	1	Divination	Hornung's Guess	300 
+yards	V	Instantaneous	2	Special	None	NO
+TOME	1	Divination	Patternweave	10 yards	VSM	1 round	3	10 foot 
+square	Special	NO
+TOME	1	Evocation	Fire Burst	5 yards/level	VS	Instantaneous	1	One 10' radius 
+circle	Neg.	NO
+TOME	1	Invocation/Evocation	Nahal's Reckless 
+Dweomer	Special	VS	Special	5	Special	Special	NO
+WATERDEEP	1	Alteration	Lightning Bug	15 yards + 10 
+yards/level	VS	Instantaneous	1	One target or creature	None	NO
+WATERDEEP	1	Alteration	Reveal Magic	0	VS	1 round/level	2	Special	None	NO
+WATERDEEP	1	Alteration	Slingstar	0	VSM	1 round/level	6	1 sling stone/3 
+levels	None	NO
+WATERDEEP	1	Divination	Reveal Magic	0	VS	1 round/level	2	Special	None	NO
+WATERDEEP	1	Evocation	Disarm	100 yards	VS	Instantaneous	1	One person	Neg.	NO
+WATERDEEP	1	Evocation	Gemidan's Icicle	20 yards/level	VSM	1 round	1	One 
+target or creature	None	NO
+WATERDEEP	1	Evocation	Lightning Bug	15 yards + 10 
+yards/level	VS	Instantaneous	1	One target or creature	None	NO
+WATERDEEP	1	Evocation	Slingstar	0	VSM	1 round/level	6	1 sling stone/3 
+levels	None	NO
+WATERDEEP	1	Evocation	Trembling Horn	50 yards + 5 yards/level	VSM	1 
+hour	2	Up to 3 targets in 20' radius globe	None	NO
+WATERDEEP	1	Illusion/Phantasm	Trembling Horn	50 yards + 5 yards/level	VSM	1 
+hour	2	Up to 3 targets in 20' radius globe	None	NO
+WIZARDS	1	Abjuration	Protection from Hunger and Thirst	Touch	SM	1 
+day/level	1	One creature	None	NO
+WIZARDS	1	Alteration	Chromatic Orb	0	VSM	Special	1	One creature	Neg.	NO
+WIZARDS	1	Divination	Detect Disease	10 yards	VSM	1 round/level	1	One 
+creature or object	None	NO
+WIZARDS	1	Divination	Divining Rod	60 yards	VSM	1 round/level	1 
+round	Special	None	NO
+WIZARDS	1	Enchantment/Charm	Divining Rod	60 yards	VSM	1 round/level	1 
+round	Special	None	NO
+WIZARDS	1	Evocation	Chromatic Orb	0	VSM	Special	1	One creature	Neg.	NO
+WIZARDS	1	Evocation	Copy	Special	VSM	Instantaneous	1 round	One 
+object	Special	NO
+WIZARDS	1	Illusion/Phantasm	Corpse Visage	Touch	VSM	1 round/level	1 
+round	Creature touched	Neg.	NO
+WIZARDS	1	Necromancy	Corpse Visage	Touch	VSM	1 round/level	1 round	Creature 
+touched	Neg.	NO
+ADVENTURES	2	Alteration	Bladethirst	Touch	VSM	1 round	2	Blade of one 
+slashing weapon	None	NO
+ADVENTURES	2	Alteration	Cloak From Undead	Touch	VSM	1 round/level	2	One 
+creature	None	NO
+ADVENTURES	2	Alteration	Ghost Pipes	Touch	VS	Special	1 round	One 
+instrument	None	NO
+ADVENTURES	2	Alteration	Vocalize	Touch	SM	5 rounds	2	One spell casting 
+creature	None	NO
+ADVENTURES	2	Conjuration/Summoning	Quimby's Enchanting Gourmet	0	VSM	1 hour 
++ 1 turn/level	2	40 foot radius	None	NO
+ADVENTURES	2	Evocation	Agannazar's Scorcher	20 yards	VS	2 rounds	3	2' X 60' 
+jet	None/Half	NO
+ADVENTURES	2	Evocation	Decastave	0	VSM	1 round + 1 round/level	2	The 
+caster	None	NO
+ADVENTURES	2	Evocation	Flying Fist	10 yards/level	VS	1 
+round/level	2	Special	None	NO
+ADVENTURES	2	Evocation	Snilloc's Snowball Swarm	10 
+yards/level	VSM	Instantaneous	2	30 foot radius	1/2	NO
+ADVENTURES	2	Necromancy	Cloak Undead	10 feet/level	VS	1 round/level	2	One or 
+more creatures in 15' radius	Neg.	NO
+ADVENTURES	2	Necromancy	Undead Mount	10 yards	VSM	2 hours + 1 hour/level	2	1 
+mount	None	NO
+BARDS	2	Alteration	Silence 15' Radius	60 yards	VS	2 rounds/level	5	15' 
+radius sphere	None	NO
+DRACONOMICON	2	Invocation/Evocation	Hand	5 yards/level	VS	2 
+rounds/level	2	Special	None	NO
+DROW	2	Evocation	Skyhook	60 feet	VSM	3 turns + 1 
+turn/level	2	Special	None	NO
+ELVES	2	Alteration	Camouflage	20' radius	SM	1 turn/level	2	One 
+person/level	Neg.	NO
+ELVES	2	Enchantment 	Seeking	100 yards	VS	1 turn	2	1 missile/3 levels, Max 
+5	None	NO
+ELVES	2	Invocation	Seeking	100 yards	VS	1 turn	2	1 missile/3 levels, Max 
+5	None	NO
+EVERMEET	2	Alteration	Speedmount	0	VSM	1 turn/level	4	One creature	None	NO
+HARPERS	2	Alteration	Silence 15' Radius	60 yards	VS	2 rounds/level	5	15 foot 
+radius sphere	None	NO
+PHB	2	Abjuration	Protection From Cantrips	Touch	VS	5 hours + 1 hour/level	1 
+round	Creature or object touched	None	NO
+PHB	2	Alteration	Alter Self	0	VS	3d4 rounds + 2 rounds/level	2	The 
+caster	None	NO
+PHB	2	Alteration	Continual Dark	60 yards	VS	Permanent	2	60 foot 
+radius	Special	YES
+PHB	2	Alteration	Continual Light	60 yards	VS	Permanent	2	60 foot 
+radius	Special	YES
+PHB	2	Alteration	Darkness, 15' Radius	10 yards/level	VSM	1 turn + 1 
+round/level	2	15 foot radius	None	NO
+PHB	2	Alteration	Deeppockets	Touch	VSM	12 hours + 1 hour/level	1 turn	One 
+garment	None	NO
+PHB	2	Alteration	Fog Cloud	10 yards	VS	4 rounds + 1 
+round/level	2	Special	None	NO
+PHB	2	Alteration	Fools' Gold	10 yards	VSM	1 hour/level	1 round	10 cu. 
+in./level	Special	NO
+PHB	2	Alteration	Irritation	10 yards/level	VSM	Special	2	1 to 4 creatures in 
+a 15'radius area	Neg.	NO
+PHB	2	Alteration	Knock	60 yards	V	Special	1	10 sq.ft./level	None	YES
+PHB	2	Alteration	Levitate	20 yards/level	VSM	1 turn/level	2	One creature or 
+object	Neg.	NO
+PHB	2	Alteration	Lock	60 yards	V	Special	1	10 sq.ft./level	None	YES
+PHB	2	Alteration	Magic Mouth	10 yards	VSM	Special	2	One object	None	NO
+PHB	2	Alteration	Pyrotechnics	120 yards	VSM	Special	2	One fire source 
+(special)	None	NO
+PHB	2	Alteration	Rope Trick	Touch	VSM	2 turns/level	2	Special	None	NO
+PHB	2	Alteration	Shatter	30 yards + 10 yards/level	VSM	Instantaneous	2	3 
+foot radius	Neg.	NO
+PHB	2	Alteration	Strength	Touch	VSM	1 hour/level	1 turn	Person 
+touched	None	NO
+PHB	2	Alteration	Whispering Wind	1 mile/level	VS	Special	1	2 foot 
+radius	None	NO
+PHB	2	Alteration	Wizard Lock	Touch	VS	Permanent	2	30 sq.ft./level	None	NO
+PHB	2	Conjuration	Melf's Acid Arrow	180 yards	VSM	Special	2	One 
+target	Special	NO
+PHB	2	Conjuration/Summoning	Glitterdust	10 yards/level	VSM	Special	2	20 foot 
+cube	Special	NO
+PHB	2	Conjuration/Summoning	Summon Swarm	60 yards	VSM	Special	2	10 foot 
+cube	Neg.	NO
+PHB	2	Divination	Detect Evil	60 yards	VS	5 rounds/level	2	10 foot 
+path	None	YES
+PHB	2	Divination	Detect Good	60 yards	VS	5 rounds/level	2	10 foot 
+path	None	YES
+PHB	2	Divination	Detect Invisibility	10 yards/level	VSM	5 rounds/level	2	10 
+foot path	None	NO
+PHB	2	Divination	ESP	5 yards/level, Max 90 yards	VSM	1 round/level	2	One 
+creature/probe	None	NO
+PHB	2	Divination	Know Alignment	10 yards	VS	1 round/level	1 round	One 
+creature or object/2 rounds	Neg.	NO
+PHB	2	Divination	Locate Object	20 yards/level	VSM	1 
+round/level	2	Special	None	YES
+PHB	2	Divination	Obscure Object	Special	VSM	8 hours	2	Special	None	YES
+PHB	2	Divination	Undetectable Alignment	Special	VS	24 hours	1 round	One 
+creature or object/2 rounds	None	YES
+PHB	2	Enchantment	Bind	30 yards	VSM	1 round/level	2	Special	None	NO
+PHB	2	Enchantment	Deeppockets	Touch	VSM	12 hours + 1 hour/level	1 turn	One 
+garment	None	NO
+PHB	2	Enchantment/Charm	Forget	30 yards	VS	Permanent	2	20 foot cube	Neg.	NO
+PHB	2	Enchantment/Charm	Ray of Enfeeblement	10 yards + 5 yards/level	VS	1 
+round/level	2	One creature	Neg.	NO
+PHB	2	Enchantment/Charm	Scare	30 yards + 10 yards/level	VSM	1d4 rounds + 1 
+round/level	2	15 foot radius	Special	NO
+PHB	2	Enchantment/Charm	Tasha's Uncontrollable Hideous Laughter	60 
+yards	VSM	1 round/level	2	One or more creatures in a 30' cube	Neg.	NO
+PHB	2	Evocation	Flaming Sphere	10 yards	VSM	1 round/level	2	3 foot radius 
+sphere	Neg.	NO
+PHB	2	Evocation	Stinking Cloud	30 yards	VSM	1 round/level	2	20 foot 
+cube	Special	NO
+PHB	2	Evocation	Web	5 yards/level	VSM	2 turns/level	2	Special	Neg. or 1/2	NO
+PHB	2	Illusion	Fools' Gold	10 yards	VSM	1 hour/level	1 round	10 cu. 
+in./level	Special	NO
+PHB	2	Illusion/Phantasm	Blindness	30 yards + 10 yards/level	V	Special	2	One 
+creature	Neg.	NO
+PHB	2	Illusion/Phantasm	Blur	0	VS	3 rounds + 1 round/level	2	The 
+caster	None	NO
+PHB	2	Illusion/Phantasm	Deafness	60 yards	VSM	Special	2	One creature	Neg.	NO
+PHB	2	Illusion/Phantasm	Hypnotic Pattern	30 yards	SM	Special	2	30 foot 
+cube	Neg.	NO
+PHB	2	Illusion/Phantasm	Improved Phantasmal Force	60 yards + 10 
+yards/level	VSM	Special	2	200 sq.ft. + 50 sq.ft./level	Special	NO
+PHB	2	Illusion/Phantasm	Invisibility	Touch	VSM	Special	2	Creature 
+touched	None	NO
+PHB	2	Illusion/Phantasm	Leomund's Trap	Touch	VSM	Permanent	3 rounds	Object 
+touched	None	NO
+PHB	2	Illusion/Phantasm	Mirror Image	0	VS	3 rounds/level	2	6 foot 
+radius	None	NO
+PHB	2	Illusion/Phantasm	Misdirection	30 yards	VS	8 hours	2	One creature or 
+object	Neg.	NO
+PHB	2	Necromancy	Spectral Hand	30 yards + 5 yards/level	VS	2 
+rounds/level	2	One opponent	None	NO
+PHB	2	Phantasm	Whispering Wind	1 mile/level	VS	Special	1	2 foot 
+radius	None	NO
+PLANES	2	Divination	Warp Sense	Touch	VS	1 round/level	3	60 feet	Special	NO
+TOME	2	Abjuration	Chaos Shield	0	VS	1d10 rounds + 2 rounds/level	2	The 
+caster	Special	NO
+TOME	2	Abjuration	Nahal's Nonsensical Nullifier	Touch	VSM	1d6 rounds + 1 
+round/level	2	Creature touched	None	NO
+TOME	2	Abjuration	Protection From Paralysis	Touch	VSM	1 turn/level	2	One 
+creature	None	NO
+TOME	2	Alteration	Maxmillian's Earthen Grasp	10 yards + 10 yards/level	VSM	3 
+rounds + 1 round/level	2	One creature	Special	NO
+TOME	2	Alteration	Ride the Wind	5 yards/level	VSM	1 turn/level	2	One 
+creature/level	Neg.	NO
+TOME	2	Alteration	Sense Shifting	0	VSM	3 turns	2	The caster	None	NO
+TOME	2	Divination	Past Life	Touch	VS	Special	1 round	One creature	None	NO
+TOME	2	Enchantment/Charm	Insatiable Thirst	5 yards/level	VS	1 
+round/level	2	One creature	Neg.	NO
+TOME	2	Evocation	Hornung's Baneful Deflector	Touch	VSM	2 rounds/level	2	One 
+creature	None	NO
+UNDERMOUNTAIN	2	Evocation	Whirling Blade	0	VS	1 
+round/level	2	Special	None	NO
+WATERDEEP	2	Alteration	Wound Bind	0	VS	Permanent	3	One creature	None	NO
+WATERDEEP	2	Evocation	Battering Ram	0	VSM	1 round	1	One target or 
+creature	Neg.	NO
+WATERDEEP	2	Evocation	Gemidan's Paralytic Missile	40 yards + 10 
+yards/level	VS	1 round/level	1	One creature	1/2	NO
+WATERDEEP	2	Evocation	Net	5 yards/level	VSM	1 turn/2 levels	2	10 foot 
+cube	Neg.	NO
+WATERDEEP	2	Necromancy	Wound Bind	0	VS	Permanent	3	One creature	None	NO
+WIZARDS	2	Abjuration	Filter	Touch	VM	1 turn/level	2	10 foot radius 
+sphere	None	NO
+WIZARDS	2	Alteration	Vocalize	Touch	SM	5 rounds	1 round	One spell-casting 
+creature	None	NO
+WIZARDS	2	Conjuration/Summoning	Choke	30 yards	VSM	1 round/level	2	One 
+creature	1/2	NO
+WIZARDS	2	Divination	Death Recall	Touch	VSM	Special	1 round	One 
+corpse	None	NO
+WIZARDS	2	Divination	Detect Lie	10 feet/level	VSM	5 rounds	2	One 
+creature	None	NO
+WIZARDS	2	Evocation	Ice Knife	Special	VSM	Instantaneous	1 
+round	Special	Neg.	NO
+WIZARDS	2	Necromancy	Choke	30 yards	VSM	1 round/level	2	One creature	1/2	NO
+WIZARDS	2	Necromancy	Death Recall	Touch	VSM	Special	1 round	One 
+corpse	None	NO
+WIZARDS	2	Necromancy	Ghoul Touch	0	VSM	1 round/level	2	One person	Special	NO
+ADVENTURES	3	Abjuration	Dispel Silence	0	SM	1 round/level	3	10 foot radius 
+sphere/level	None	NO
+ADVENTURES	3	Abjuration	Hold Vapor	10 yards/level	VSM	Special	3	20 foot 
+radius globe + 10'/level	Special	NO
+ADVENTURES	3	Abjuration	Proof from Teleportation	0	VSM	2 hours/level	2 
+turns	10 yard radius/level	None	NO
+ADVENTURES	3	Abjuration	Ward Against Undead	0	VS	1 round + 1 
+round/level	3	10 foot radius/level	Neg.	NO
+ADVENTURES	3	Alteration	Blacklight	10 yards/level	VSM	1 round/level	3	20 
+foot radius globe	Neg.	NO
+ADVENTURES	3	Alteration	Dispel Silence	0	SM	1 round/level	3	10 foot radius 
+sphere/level	None	NO
+ADVENTURES	3	Alteration	Icelance	10 
+yards/level	VSM	Special	3	Special	None	NO
+ADVENTURES	3	Alteration	Nchaser's Glowing Globe	Touch	VSM	Permanent	3	One 
+globe	None	NO
+ADVENTURES	3	Conjuration	Ghost Armor	Touch	VSM	1 round/level	1	One creature, 
+size H or smaller	None	NO
+ADVENTURES	3	Enchantment/Charm	Dire Charm	120 yards	VSM	1d4 rounds + 1 
+round/level	3	One individual	Neg.	NO
+ADVENTURES	3	Enchantment/Charm	Waves of Weariness	40 yards	VSM	1 round	3	One 
+creature	Neg.	NO
+ADVENTURES	3	Illusion/Phantasm	Laeral's Dancing Dweomer	20 yards + 10 
+yards/level	VSM	1 turn/level	3	40 foot diameter sphere	Neg.	NO
+ADVENTURES	3	Illusion/Phantasm	Nightscar	30 yards	SM	1 day/level	3	One 
+creature or object	Neg.	NO
+ADVENTURES	3	Necromancy	Mummy Touch	Touch	VSM	1 round/level	3	Creature 
+touched	Neg.	NO
+ADVENTURES	3	Necromancy	Paralyze	Touch	VSM	1 round/level	3	The 
+caster	None	NO
+ADVENTURES	3	Necromancy	Revenance	Touch	VSM	Special	1 turn	Undead within 15 
+feet of the caster	None	NO
+ADVENTURES	3	Necromancy	Skull Watch	Touch	VSM	1 turn + 1 turn/level	2	20 
+foot X 90 foot area	None	NO
+BARDS	3	Alteration	Improved Magic Mouth	10 yards	VSM	Special	3	One 
+object	None	NO
+BARDS	3	Conjuration	Instant Audience	30 yards	VSM	Up to 4 hours	2	One room 
+or area within range	None	NO
+BARDS	3	Evocation	Wall of Sound	60 yards	VSM	Concentration + 1 
+round/level	3	Special	None	NO
+DRACONOMICON	3	Conjuration/Summoning	Find Humanoid Familiar	1 
+mile/level	V	Special	1d20 hours	One familiar	Special	NO
+DRACONOMICON	3	Invocation/Evocation	Venomdust	0	VS	One mouth/level	1 
+round	Special	Special	NO
+DROW	3	Alteration	Dark Wings	Touch	VSM	1 round/level	3	One creature	Neg.	NO
+DROW	3	Alteration	Hand of Darkness	10 yards/level	VSM	1 turn + 1 
+round/level	3	Light sources within a 30' radius sphere	None	NO
+HARPERS	3	Alteration	Improved Magic Mouth	10 yards	VSM	Special	3	One 
+object	None	NO
+HARPERS	3	Conjuration	Instant Audience	30 yards	VSM	Up to 4 hours	2	One room 
+or area within range	None	NO
+HARPERS	3	Evocation	Wall of Sound	60 yards	VSM	Concentration + 1 
+round/level	3	Special	None	NO
+PHB	3	Abjuration	Dispel Magic	120 yards	VS	Instantaneous	3	30 foot 
+cube	None	NO
+PHB	3	Abjuration	Non-Detection	Touch	VSM	1 hour/level	3	One creature or 
+item	None	NO
+PHB	3	Abjuration	Protection From Evil, 10' Radius	Touch	VSM	2 
+rounds/level	3	10 foot radius sphere around creature touched	None	YES
+PHB	3	Abjuration	Protection From Good, 10' Radius	Touch	VSM	2 
+rounds/level	3	10 foot radius sphere around creature touched	None	YES
+PHB	3	Abjuration	Protection From Normal Missiles	Touch	VSM	1 
+turn/level	3	Creature touched	None	NO
+PHB	3	Alteration	Air Breathing	Touch	VSM	1 hour/level + 1d4 hours	3	Creature 
+touched	None	YES
+PHB	3	Alteration	Blink	0	VS	1 round/level	1	The caster	None	NO
+PHB	3	Alteration	Confuse Verbal Communication	0	VM	1 round/level	3	30 foot 
+radius	None	YES
+PHB	3	Alteration	Delude	0	VS	1 turn/level	3	The caster	Neg.	NO
+PHB	3	Alteration	Explosive Runes	Touch	VS	Special	3	10 foot radius	None or 
+1/2	NO
+PHB	3	Alteration	Fly	Touch	VSM	1 turn/level + 1d6 turns	3	Creature 
+touched	None	NO
+PHB	3	Alteration	Gust of Wind	0	VSM	1 round	3	10 foot wide path, 10 
+yards/level long	None	NO
+PHB	3	Alteration	Haste	60 yards	VSM	3 rounds + 1 round/level	3	40' cube, 1 
+creature/level	None	NO
+PHB	3	Alteration	Infravision	Touch	VSM	2 hours + 1 hour/level	1 
+round	Creature touched	None	NO
+PHB	3	Alteration	Item	Touch	VSM	4 hours/level	3	2 cu.ft./level	Special	NO
+PHB	3	Alteration	Leomund's Tiny Hut	0	VSM	4 hours + 1 hour/level	3	15 foot 
+diameter sphere	None	NO
+PHB	3	Alteration	Melf's Minute Meteors	70 yards + 10 
+yards/level	VSM	Special	3	One target per meteor	None	NO
+PHB	3	Alteration	Secret Page	Touch	VSM	Until dispelled	1 turn	1 page of any 
+size, up to 2 ft. sq.	None	NO
+PHB	3	Alteration	Slow	90 yards + 10 yards/level	VSM	3 rounds + 1 
+round/level	3	40' cube, 1 creature/level	Neg.	NO
+PHB	3	Alteration	Tongues	0	VM	1 round/level	3	30 foot radius	None	YES
+PHB	3	Alteration	Water Breathing	Touch	VSM	1 hour/level + 1d4 
+hours	3	Creature touched	None	NO
+PHB	3	Alteration	Wind Wall	10 yards/level	VSM	1 round/level	3	A 10' wide X 
+5' high area/level	Special	NO
+PHB	3	Alteration	Wraithform	0	SM	2 rounds/level	1	The caster	None	NO
+PHB	3	Conjuration	Phantom Steed	Touch	VS	1 hour/level	1 turn	Special	None	NO
+PHB	3	Conjuration/Summoning	Flame Arrow	30 yards + 10 yards/level	VSM	1 
+round	3	Special	None	NO
+PHB	3	Conjuration/Summoning	Monster Summoning I	30 yards	VSM	2 rounds + 1 
+round/level	3	Special	None	NO
+PHB	3	Conjuration/Summoning	Sepia Snake Sigil	5 yards	VSM	Special	3	1 
+sigil	None	NO
+PHB	3	Divination	Clairaudience	Special	VSM	1 round/level	3	Special	None	NO
+PHB	3	Divination	Clairvoyance	Special	VSM	1 round/level	3	Special	None	NO
+PHB	3	Enchantment/Charm	Hold Person	120 yards	VSM	2 rounds/level	3	1 to 4 
+persons in 20 foot cube	Neg.	NO
+PHB	3	Enchantment/Charm	Suggestion	30 yards	VM	1 hour + 1 hour/level	3	One 
+creature	Neg.	NO
+PHB	3	Evocation	Fireball	10 yards + 10 yards/level	VSM	Instantaneous	3	20 
+foot radius	1/2	NO
+PHB	3	Evocation	Lightning Bolt	40 yards + 10 
+yards/level	VSM	Instantaneous	3	Special	1/2	NO
+PHB	3	Evocation	Melf's Minute Meteors	70 yards + 10 
+yards/level	VSM	Special	3	One target per meteor	None	NO
+PHB	3	Illusion	Wraithform	0	SM	2 rounds/level	1	The caster	None	NO
+PHB	3	Illusion/Phantasm	Illusionary Script	Touch	VSM	1 
+day/level	Special	Creature reading script	Special	NO
+PHB	3	Illusion/Phantasm	Invisibility, 10' Radius	Touch	VSM	Special	3	10 foot 
+radius of creature touched	None	NO
+PHB	3	Illusion/Phantasm	Spectral Force	60 yards + 1 
+yard/level	VS	Special	3	40' cube + a 10' cube/level	Special	NO
+PHB	3	Necromancy	Feign Death	Touch	VS	1 hour + 1 turn/level	1	Creature 
+touched	None	NO
+PHB	3	Necromancy	Hold Undead	60 feet	VSM	1d4 rounds + 1 round/level	5	1d3 
+undead	Neg.	NO
+PHB	3	Necromancy	Vampiric Touch	0	VS	One touch	3	The caster	None	NO
+PHB	3	Phantasm	Phantom Steed	Touch	VS	1 hour/level	1 turn	Special	None	NO
+TOME	3	Alteration	Alacrity	0	VSM	1 turn + 1 round/level	1	The caster	None	NO
+TOME	3	Alteration	Alternate Reality	0	VSM	Instantaneous	3	Creature 
+touched	None	NO
+TOME	3	Alteration	Far Reaching I	0	V	Special	2	Special	None	NO
+TOME	3	Alteration	FireFlow	30 yards	VSM	1 round/level	3	One fire 
+source	None	NO
+TOME	3	Alteration	Fool's Speech	Touch	VSM	1 hour/level	1 turn	The caster + 1 
+creature/level	None	NO
+TOME	3	Alteration	Maxmillian's Stony Grasp	20 yards + 10 yards/level	VSM	5 
+rounds + 1 round/level	3	One creature	Special	NO
+TOME	3	Alteration	Squaring the Circle	0	VSM	1 round/level	2	Special	None	NO
+TOME	3	Conjuration/Summoning	Watery Double	Touch	VS	Special	3	One body of 
+liquid	Neg.	NO
+TOME	3	Divination	Alamir's Fundamental Breakdown	Touch	VSM	Special	1 
+round	One item	Special	NO
+TOME	3	Divination	Wizard Sight	0	VS	1 round/level	3	The caster	None	NO
+TOME	3	Enchantment	Watery Double	Touch	VS	Special	3	One body of 
+liquid	Neg.	NO
+TOME	3	Enchantment/Charm	Minor Malison	60 feet	V	2 rounds/level	2	30 foot 
+radius sphere	None	NO
+TOME	3	Illusion	Lorlovelm's Creeping Shadow	0	VSM	1 round/level	7	The 
+caster's shadow	None	NO
+TOME	3	Invocation/Evocation	Aumentation I	0	VSM	Special	2	Special	None	NO
+TOME	3	Necromancy	Spirit Armor	0	VS	2 rounds/level	3	The caster	Special	NO
+UNDERMOUNTAIN	3	Alteration	Khelben's Suspended 
+Silence	Touch	VSM	Special	3	20 foot radius sphere	None	NO
+WATERDEEP	3	Alteration	Healing Touch	0	VS	One touch	2	One target	None	YES
+WATERDEEP	3	Alteration	Lightning Repelant?	0	VSM	Special	7	One 
+object	None	YES?
+WATERDEEP	3	Alteration	Lightning Rod	0	VSM	Special	7	One object	None	YES?
+WATERDEEP	3	Alteration	Vampiric Touch	0	VS	One touch	2	One target	None	YES
+WATERDEEP	3	Enchantment/Charm	Fearfire	0	VSM	4 rounds + 1 round/level	4	One 
+creature/2 levels	Neg.	NO
+WATERDEEP	3	Enchantment/Charm	Gamalon's Fiery Backlash	120 yards + 10 
+yards/level	VS	1 turn + 1 round/2 levels	1	1-4 targets in 30 foot radius 
+area	Neg.	NO
+WATERDEEP	3	Evocation	Gamalon's Fiery Backlash	120 yards + 10 
+yards/level	VS	1 turn + 1 round/2 levels	1	1-4 targets in 30 foot radius 
+area	Neg.	NO
+WATERDEEP	3	Illusion	Fearfire	0	VSM	4 rounds + 1 round/level	4	One 
+creature/2 levels	Neg.	NO
+WATERDEEP	3	Necromancy	Healing Touch	0	VS	One touch	2	One target	None	YES
+WATERDEEP	3	Necromancy	Vampiric Touch	0	VS	One touch	2	One target	None	YES
+WIZARDS	3	Abjuration	Invisible Mail	0	VSM	Special	2	The caster	None	NO
+WIZARDS	3	Abjuration	Iron Mind	Touch	SM	1 hour	3	One creature	None	NO
+WIZARDS	3	Alteration	Snapping Teeth	Touch	VSM	1 turn/level	3	One creature or 
+object	None	NO
+WIZARDS	3	Alteration	Snapping Teeth	Touch	VSM	1 turn/level	3	One creature or 
+object	None	NO
+WIZARDS	3	Enchantment	Bone Club	0	VM	1 round/level	1 round	One bone	None	NO
+WIZARDS	3	Enchantment	Delay Death	30 yards	VSM	1 turn/level	1 round	One 
+creature	None	NO
+WIZARDS	3	Evocation	Invisible Mail	0	VSM	Special	2	The caster	None	NO
+WIZARDS	3	Necromancy	Bone Club	0	VM	1 round/level	1 round	One bone	None	NO
+WIZARDS	3	Necromancy	Delay Death	30 yards	VSM	1 turn/level	1 round	One 
+creature	None	NO
+WIZARDS	3	Necromancy	Hovering Skull	Special	VSM	2 
+rounds/level	4	Special	None	NO
+WIZARDS	3	Necromancy	Pain Touch	Touch	VM	1 round/level	3	One 
+creature	None	NO
+PHB	4	Abjuration	Bestow Curse	Touch	VS	Permanent	4	Special	Special	YES
+PHB	4	Enchantment/Charm	Charm Monster	60 yards	VSM	Special	4	One or more 
+creatures in a 20 foot radius	Neg.	NO
+PHB	4	Enchantment/Charm	Confusion	120 yards	VSM	2 rounds + 1 
+round/level	4	Up to 60 foot cube	Special	NO
+PHB	4	Necromancy	Contagion	30 yards	VSM	Permanent	4	One creature	Neg.	NO
+PHB	4	Divination	Detect Scrying	0	VSM	1d6 turns + 1 turn/level	3	120 foot 
+radius	Special	NO
+PHB	4	Evocation	Dig	30 yards	VSM	1 round/level	4	5 foot 
+cube/level	Special	NO
+PHB	4	Alteration	Dimension Door	0	VSM	Instantaneous	1	The caster	None	NO
+PHB	4	Enchantment/Charm	Emotion	10 yards/level	VSM	Special	4	20 foot 
+cube	Neg.	NO
+PHB	4	Enchantment	Enchanted Weapon	Touch	VSM	5 rounds/level	1 turn	Weapon(s) 
+touched	None	NO
+PHB	4	Necromancy	Enervation	10 yards/level	VSM	1d4 hours + 1 
+hour/level	4	One creature	Neg.	NO
+PHB	4	Conjuration/Summoning	Evard's Black Tentacles	30 yards	VSM	1 
+hour/level	1 round	30 sq.ft./level	None	NO
+PHB	4	Alteration	Extension I	0	VSM	Special	2	Special	None	NO
+PHB	4	Illusion/Phantasm	Fear	0	VSM	Special	4	60' long cone, 30' diameter at 
+end, 5' at base	Neg.	NO
+PHB	4	Enchantment/Charm	Fire Charm	10 yards	VSM	2 rounds/level	4	15 foot 
+radius of fire	Neg.	NO
+PHB	4	Alteration	Fire Shield	0	VSM	2 rounds + 1 round/level	4	The 
+caster	None	NO
+PHB	4	Evocation	Fire Shield	0	VSM	2 rounds + 1 round/level	4	The 
+caster	None	NO
+PHB	4	Abjuration	Fire Trap	Touch	VSM	Permanent until discharged	1 
+turn	Object touched	1/2	NO
+PHB	4	Evocation	Fire Trap	Touch	VSM	Permanent until discharged	1 turn	Object 
+touched	1/2	NO
+PHB	4	Enchantment/Charm	Fumble	10 yards/level	VSM	1 round/level	4	30 foot 
+cube	Special	NO
+PHB	4	Illusion/Phantasm	Hallucinatory Terrain	20 yards/level	VSM	1 
+hour/level	1 turn	Cube up to 30 per side/level	None	NO
+PHB	4	Evocation	Ice Storm	10 yards/level	VSM	Special	4	Special	None	NO
+PHB	4	Illusion/Phantasm	Illusionary Wall	30 yards	VSM	Permanent	4	1' X 10' X 
+10'	None	NO
+PHB	4	Illusion/Phantasm	Improved Invisibility	Touch	VSM	4 rounds + 1 
+round/level	4	Creature touched	None	NO
+PHB	4	Alteration	Leomund's Secure Shelter	20 yards	VSM	1d4 + 1 hours + 1 
+hour/level	4 turns	30 sq.ft./level	None	NO
+PHB	4	Enchantment	Leomund's Secure Shelter	20 yards	VSM	1d4 + 1 hours + 1 
+hour/level	4 turns	30 sq.ft./level	None	NO
+PHB	4	Enchantment	Magic Mirror	Touch	VSM	1 round/level	1 
+hour	Special	None	NO
+PHB	4	Divination	Magic Mirror	Touch	VSM	1 round/level	1 hour	Special	None	NO
+PHB	4	Alteration	Massmorph	10 yards/level	VSM	Special	4	One 10 foot 
+cube/level	None	NO
+PHB	4	Illusion/Phantasm	Minor Creation	Touch	VSM	1 hour/level	1 
+turn	Special	None	NO
+PHB	4	Abjuration	Minor Globe of Invulnerability	0	VSM	1 round/level	4	5 foot 
+radius sphere	None	NO
+PHB	4	Conjuration/Summoning	Monster Summoning II	40 yards	VSM	3 rounds + 1 
+round/level	4	Special	None	NO
+PHB	4	Alteration	Otiluke's Resilient Sphere	20 yards	VSM	1 round/level	4	1 
+foot diameter/level	Neg.	NO
+PHB	4	Evocation	Otiluke's Resilient Sphere	20 yards	VSM	1 round/level	4	1 
+foot diameter/level	Neg.	NO
+PHB	4	Illusion/Phantasm	Phantasmal Killer	5 yards/level	VSM	1 
+round/level	4	One creature	Special	NO
+PHB	4	Alteration	Plant Growth	10 yards/level	VSM	Permanent	4	An area 10' per 
+side/level	None	NO
+PHB	4	Alteration	Polymorph Other	5 yards/level	VSM	Permanent	4	One 
+creature	Neg.	NO
+PHB	4	Alteration	Polymorph Self	0	VSM	2 turns/level	4	The caster	None	NO
+PHB	4	Alteration	Rainbow Pattern	10 yards	VSM	Special	4	30 foot cube	Neg.	NO
+PHB	4	Illusion/Phantasm	Rainbow Pattern	10 yards	VSM	Special	4	30 foot 
+cube	Neg	NO
+PHB	4	Alteration	Rary's Mnemonic Enhancer	0	VSM	1 day	1 turn	The 
+caster	None	NO
+PHB	4	Abjuration	Remove Curse	Touch	VSM	Permanent	4	Special	Special	NO
+PHB	4	Illusion/Phantasm	Shadow Monsters	30 yards	VSM	1 round/level	4	20 foot 
+cube	Special	NO
+PHB	4	Evocation	Shout	Evocation	VSM	Instantaneous	1	10 foot X 30 foot 
+cone	Special	NO
+PHB	4	Alteration	Solid Fog	30 yards	VSM	2d4 rounds + 1 round/level	4	20' X 
+10' X 10' volume/level of caster	None	NO
+PHB	4	Alteration	Stonekin	Touch	VSM	Special	1	One creature	None	NO
+PHB	4	Alteration	Vacancy	10 yards/level	VSM	1 hour/level	4	10 foot 
+radius/level	None	NO
+PHB	4	Illusion/Phantasm	Vacancy	10 yards/level	VSM	1 hour/level	4	10 foot 
+radius/level	None	NO
+PHB	4	Evocation	Wall of Fire	60 yards	VSM	Special	4	Special	None	NO
+PHB	4	Evocation	Wall of Ice	10 yards/level	VSM	1 
+turn/level	4	Special	None	NO
+PHB	4	Alteration	Wizard Eye	0	VSM	1 round/level	1 turn	Special	None	NO
+DROW	4	Conjuration	Acid Bolt	200 yards	VSM	Special	4	Special	Special	NO
+DROW	4	Necromancy	Backlash	Touch	VS	Special	4	One spellcaster	Neg.	NO
+DROW	4	Alteration	Stop	10 feet/level	VS	4 rounds	4	One creature	Special	NO
+EVERMEET	4	Enchantment/Charm	Fatigue	0	VSM	1 round/level	5	Cone, 60' long, 
+30' diameter at end, 5' at base	Neg.	NO
+EVERMEET	4	Invocation/Evocation	Sunbolt	10 yards+ 10 
+yards/level	VSM	Instantaneous	4	30' radius	Special	NO
+DRACONOMICON	4	Invocation/Evocation	Firetrail	Any	V	Special	2	Special	None	NO
+DRACONOMICON	4	Evocation	Wingbind	40 feet/level	V	1 round/level	3	One 
+dragon	Special	NO
+HARPERS	4	Conjuration	Conjure Cabinet	10 feet	VS	1 
+round/level	4	Special	None	NO
+WIZARDS	4	Conjuration	Duplicate	Touch	SM	1 hour/level	1 round	One 
+object	None	NO
+WIZARDS	4	Abjuration	Fire Aura	0	VSM	2 rounds/level	4	The caster	Special	NO
+WIZARDS	4	Abjuration	Halo of Eyes	0	VM	1 turn/level	4	Special	None	NO
+WIZARDS	4	Conjuration	Halo of Eyes	0	VM	1 turn/level	4	Special	None	NO
+WIZARDS	4	Abjuration	Otiluke's Dispelling Screen	5 yards/level	VSM	1 
+round/level	5	20 foot square	None	NO
+WIZARDS	4	Evocation	Otiluke's Dispelling Screen	5 yards/level	VSM	1 
+round/level	5	20 foot square	None	NO
+WIZARDS	4	Evocation	Wind Breath	0	VSM	Instantaneous	1 round	Cone, 60 yards 
+long, 30 yards wide at the base	1/2	NO
+ADVENTURES	4	Necromancy	Beltyn's Burning Blood	10 yards/level	VSM	3 
+rounds	4	One creature	Neg.	NO
+ADVENTURES	4	Conjuration/Summoning	Caligarde's Claw	60 yards	VSM	1 
+round/level	4	Special	Neg.	NO
+ADVENTURES	4	Illusion/Phantasm	Encrypt	10 feet + 10 
+feet/level	VSM	Permanent	4	Special	None	NO
+ADVENTURES	4	Alteration	Fire Gate	0	VM	Instantaneous	3	The caster	None	NO
+ADVENTURES	4	Abjuration	IIyykur's Mantle	0	VSM	1 round/level	4	The 
+caster	None	NO
+ADVENTURES	4	Alteration	Missile Mastery	10 yards/level	VS	4 rounds	4	One 
+missile	None	NO
+ADVENTURES	4	Alteration	Phase Trap	20 yards	VSM	1 round/level	4	One 
+creature	Neg.	NO
+ADVENTURES	4	Illusion/Phantasm	Plague	Touch	VSM	7 days/level	4	Creature 
+touched	Neg.	NO
+ADVENTURES	4	Evocation	Spectral Wings	Touch	VSM	1 
+turn/level	4	Special	None	NO
+ADVENTURES	4	Necromancy	Spendelard's Chaser	Touch	VSM	1 turn/level	8	One 
+creature, size L or smaller	None	NO
+ADVENTURES	4	Evocation	Thunderlance	0	VSM	1 round/level or until 
+discharged	4	The caster	None	NO
+ADVENTURES	4	Evocation	Wall of Sand	5 yards/level	VSM	1 
+round/level	4	Special	None	NO
+ADVENTURES	4	Evocation	Watchware	Touch	VSM	Special	1 round	One item	None	NO
+TOME	4	Alteration	Dilation I	0	V	Special	4	Special	None	NO
+TOME	4	Evocation	Divination Enhancement	0	V	2 turns + 2 rounds/level	4	The 
+caster	None	NO
+TOME	4	Alteration	Far Reaching II	0	V	Special	4	Special	None	NO
+TOME	4	Enchantment/Charm	Greater Malison	60 feet	V	2 rounds/level	4	30 foot 
+radius sphere	None	NO
+TOME	4	Divination	Locate Creature	50 yards/level	VSM	1 turn/level	5	One 
+creature	None	NO
+TOME	4	Necromancy	Mask of Death	Touch	VSM	1 hour/level	1 round	One 
+creature	None	NO
+TOME	4	Abjuration	Minor Spell Turning	0	VSM	3 rounds/level	4	The 
+caster	None	NO
+TOME	4	Alteration	Mordenkainen's Celerity	0	VSM	1 turn	4	Special	None	NO
+TOME	4	Invocation	Mordenkainen's Celerity	0	VSM	1 turn	4	Special	None	NO
+TOME	4	Conjuration/Summoning	Summon Lycanthrope	Special	VSM	Special	1 
+turn	One creature	Neg.	NO
+TOME	4	Evocation	There/Not There	30 yards	VSM	1-6 turns	1 round	10' 
+cube	None	NO
+TOME	4	Invocation/Evocation	Thunder Staff	0	VSM	Instantaneous	4	20' X 40' 
+cone	1/2	NO
+TOME	4	Alteration	Turn Boulder to 
+Pebble	Touch	VSM	Special	4	Special	None	YES
+TOME	4	Alteration	Turn Pebble to 
+Boulder	Touch	VSM	Special	4	Special	None	YES
+TOME	4	Evocation	Unluck	10 yards	VSM	2d10 rounds	4	One creature	Neg.	NO
+BARDS	4	Conjuration	Conjure Cabinet	10 feet	VS	1 
+round/level	4	Special	None	NO
+WATERDEEP	4	Abjuration	Blacksphere	10 yards + 2 yards/level	VSM	2d4 rounds + 
+1 round/level	3	10 foot radius globe	Special	YES
+WATERDEEP	4	Evocation	Blacksphere	10 yards + 2 yards/level	VSM	2d4 rounds + 
+1 round/level	3	10 foot radius globe	Special	YES
+WATERDEEP	4	Abjuration	Blacksphere reverse	10 yards + 2 yards/level	VSM	2d4 
+rounds + 1 round/level	3	10 foot radius globe	Special	YES
+WATERDEEP	4	Evocation	Blacksphere reverse	10 yards + 2 yards/level	VSM	2d4 
+rounds + 1 round/level	3	10 foot radius globe	Special	YES
+WATERDEEP	4	Alteration	Death Field	0	VS	1 round/3 levels	2	The 
+caster	None	YES
+WATERDEEP	4	Necromancy	Death Field	0	VS	1 round/3 levels	2	The 
+caster	None	YES
+WATERDEEP	4	Evocation	Delayed Magic Missile	80 yards + 10 yards/level	VS	1 
+round/level	1	One creature	Special	NO
+WATERDEEP	4	Alteration	Duhlark's Long Reach	25 yards + 5 yards/level	VSM	1 
+turn/2 levels	7	Special	None	NO
+WATERDEEP	4	Conjuration/Summoning	Duhlark's Long Reach	25 yards + 5 
+yards/level	VSM	1 turn/2 levels	7	Special	None	NO
+WATERDEEP	4	Alteration	Life Bolt	10 yards/level	VS	Permanent	6	One undead 
+creature	1/2	NO
+WATERDEEP	4	Necromancy	Life Bolt	10 yards/level	VS	Permanent	6	One undead 
+creature	1/2	NO
+WATERDEEP	4	Alteration	Life Field	0	VS	1 round/3 levels	2	The 
+caster	None	YES
+WATERDEEP	4	Necromancy	Life Field	0	VS	1 round/3 levels	2	The 
+caster	None	YES
+	4				VSM		4		None
+
+
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+	4				VSM		4		None
+					VSM		4		None
+					VSM		4		None
+					VSM		4		None
+					VSM		4		None
+					VSM		4		None
+							4		None
+							4		None
+									None
+									None
+									None
+									None
+

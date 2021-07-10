@@ -1,0 +1,510 @@
+<html>
+<head>
+	<title>Diablo II Magic Item Generator Demo</title>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+
+var NS = (document.layers) ? 1 : 0;
+var IE = (document.all) ? 1 : 0;
+
+var level = 1;
+var upgrade = 0;
+var totalXP = 0;
+var totalGold = 0;
+var pref = 0;
+var suff = 0;
+var side_effect = "";
+var itemname = "";
+var itemdescrip = "";
+
+var items = new Array;
+
+function rollD (diesides) {
+  return (Math.floor(Math.random() * diesides) + 1);
+}
+
+function makeitem () {
+
+  totalXP = 0;
+  totalGold = 0;
+  itemdescrip = "";
+  itemname = "";
+  var tempstring1, tempstring2, tempstring3;
+  
+  level = document.form1.dungeonlevel.selectedIndex + 1;
+  upgrade = document.form1.upgradelevel.selectedIndex * 3;
+  
+  level = level + upgrade;
+  
+  var roll = rollD(20) + level;
+  
+  if (roll < 16) {
+    itemname = get_base_item(60);
+	itemdescrip = side_effect;
+	return itemname;
+	
+  } else if (roll == 16 || roll == 17) {
+    tempstring1 = get_base_item(89);
+	itemdescrip = side_effect;
+	if (pref != 0) {  // some items don't take prefixes
+  	  tempstring2 = get_prefix();
+	  itemdescrip = itemdescrip+"; "+side_effect;
+      return tempstring2+" "+tempstring1;
+	} else {
+	  return tempstring1;
+	}
+  } else if (roll == 18 || roll == 19) {
+	tempstring1 = get_base_item(89);
+	itemdescrip = side_effect;
+    if (suff != 0) {  // some items don't take suffixes
+  	  tempstring2 = get_suffix();
+	  itemdescrip = itemdescrip+"; "+side_effect;
+      return tempstring1+" "+tempstring2;
+	} else {
+	  return tempstring1;
+    }	
+  } else {
+    tempstring1 = get_base_item(100);
+	itemdescrip = side_effect;
+	if (pref != 0) {
+      tempstring2 = get_prefix();
+	  itemdescrip = itemdescrip+"; "+side_effect;
+	  if (suff != 0) {  // prefix yes, suffix yes
+	    tempstring3 = get_suffix();
+	    itemdescrip = itemdescrip+"; "+side_effect;
+        return tempstring2+" "+tempstring1+" "+tempstring3;
+	  } else {  // prefix yes, suffix no
+	    itemdescrip = itemdescrip+"; "+side_effect;
+		return tempstring2+" "+tempstring1;
+	  }
+	} else {
+	  if (suff != 0) {  // prefix no, suffix yes
+	    tempstring3 = get_suffix();
+	    itemdescrip = itemdescrip+"; "+side_effect;
+        return tempstring1+" "+tempstring3;
+	  }
+	}
+    return tempstring1;  // prefix no, suffix no
+  }
+}
+
+function get_prefix () {
+  var roll = pref;
+  var arr = "";  // which prefix array to read from
+
+  if (roll < 21) { arr = "pref1"; }
+  else if (roll >= 21 && roll <= 34) { arr = "pref2"; roll = rollD(20)+level; }
+  else if (roll >= 35 && roll <= 40) { arr = "pref3"; roll = rollD(20)+level; }
+  else if (roll >= 41 && roll <= 45) { arr = "pref4"; roll = rollD(20)+level; }
+  else if (roll >= 46 && roll <= 50) { arr = "pref5"; roll = rollD(100)+level; }
+  else if (roll >= 51 && roll <= 55) { arr = "pref6"; roll = rollD(20)+level; }
+  else if (roll >= 56 && roll <= 60) { arr = "pref7"; roll = rollD(20)+level; }
+  else if (roll >= 61 && roll <= 62) { arr = "pref8"; roll = rollD(20)+level; }
+  else if (roll >= 63 && roll <= 70) { arr = "pref9"; roll = rollD(20)+level; }
+  else if (roll >= 71 && roll <= 77) { arr = "pref10"; roll = rollD(20)+level; }
+  else if (roll >= 78 && roll <= 82) { arr = "pref11"; roll = rollD(20)+level; }
+  else if (roll >= 83 && roll <= 90) { arr = "pref12"; roll = rollD(20)+level; }
+  else { arr = "pref13"; roll = rollD(20)+level; }
+
+  return get_array_element (arr, roll);
+}
+
+function get_suffix () {
+  var roll = suff;
+  var arr = "";  // which prefix array to read from
+
+  if (roll < 21) { arr = "suff1"; }
+  else if (roll >= 21 && roll <= 25) { arr = "suff2"; roll = rollD(20)+level; }
+  else if (roll >= 26 && roll <= 30) { arr = "suff3"; roll = rollD(20)+level; }
+  else if (roll >= 31 && roll <= 35) { arr = "suff4"; roll = rollD(20)+level; }
+  else if (roll >= 36 && roll <= 45) { arr = "suff5"; roll = rollD(20)+level; }
+  else if (roll >= 46 && roll <= 49) { arr = "suff6"; roll = rollD(60)+level; }
+  else if (roll >= 50 && roll <= 53) { arr = "suff7"; roll = rollD(20)+level; }
+  else if (roll >= 54 && roll <= 56) { arr = "suff8"; roll = rollD(20)+level; }
+  else if (roll >= 57 && roll <= 60) { arr = "suff9"; roll = rollD(20)+level; }
+  else if (roll >= 61 && roll <= 63) { arr = "suff10"; roll = rollD(20)+level; }
+  else if (roll >= 64 && roll <= 67) { arr = "suff11"; roll = rollD(20)+level; }
+  else if (roll >= 68 && roll <= 70) { arr = "suff12"; roll = rollD(20)+level; }
+  else if (roll >= 71 && roll <= 73) { arr = "suff13"; roll = rollD(20)+level; }
+  else if (roll >= 74 && roll <= 75) { arr = "suff14"; roll = rollD(20)+level; }
+  else if (roll >= 76 && roll <= 77) { arr = "suff15"; roll = rollD(20)+level; }
+  else if (roll >= 78 && roll <= 80) { arr = "suff16"; roll = rollD(20)+level; }
+  else if (roll >= 81 && roll <= 82) { arr = "suff17"; roll = rollD(20)+level; }
+  else if (roll >= 83 && roll <= 84) { arr = "suff18"; roll = rollD(20)+level; }
+  else if (roll == 85) { arr = "suff19"; roll = rollD(20)+level; }
+  else if (roll >= 86 && roll <= 90) { arr = "suff20"; roll = rollD(20)+level; }
+  else { // casts spells -- special procedure to build name and description
+    var whichspelllist = get_array_element ("suff21", rollD(20)+level);
+	var randomspell = rollD(items[whichspelllist].length)-1;
+	var spellname = items[whichspelllist][randomspell];
+	side_effect = "casts <i>"+spellname+"</i> spell";
+	return "of "+spellname;
+  }
+  
+  return get_array_element (arr, roll);
+}
+
+function get_base_item (diesides) {
+  var roll = rollD(diesides);
+  var arr = "";   // which array to read from
+  
+  if (roll < 11) {  arr = "armor";  roll = rollD(20)+level;  pref = rollD(60);  suff = rollD(60);  }
+  else if (roll >= 11 && roll <= 15) {
+    arr = "headgear";  roll = rollD(20)+level;  pref = rollD(60);  suff = rollD(60);  }
+  else if (roll >= 16 && roll <= 20) {
+    arr = "accout";  roll = rollD(20)+level;  pref = rollD(60);  suff = rollD(60);  }
+  else if (roll >= 21 && roll <= 25) {
+    arr = "shields";  roll = rollD(20)+level;  pref = rollD(60);  suff = rollD(60);  }
+  else if (roll >= 26 && roll <= 30) {
+    arr = "knives";  roll = rollD(20)+level;  pref = rollD(60)+25;  suff = rollD(60)+25;  }
+  else if (roll >= 31 && roll <= 40) {
+    arr = "swords";  roll = rollD(20)+level;  pref = rollD(60)+25;  suff = rollD(60)+25;  }
+  else if (roll >= 41 && roll <= 44) {
+    arr = "clubs";  roll = rollD(20)+level;  pref = rollD(60)+25;  suff = rollD(60)+25;  }
+  else if (roll >= 45 && roll <= 48) {
+    arr = "spears";  roll = rollD(20)+level;  pref = rollD(60)+25;  suff = rollD(60)+25;  }
+  else if (roll >= 49 && roll <= 50) {
+    arr = "polearms";  roll = rollD(20)+level;  pref = rollD(60)+25;  suff = rollD(60)+25;  }
+  else if (roll >= 51 && roll <= 55) {
+    arr = "axes";  roll = rollD(20)+level; pref = rollD(60)+25;  suff = rollD(60)+25;  }
+  else if (roll >= 56 && roll <= 63) {
+    arr = "bows";  roll = rollD(20)+level;  pref = rollD(60)+30;  suff = rollD(60)+30;  }
+  else if (roll >= 64 && roll <= 65) {
+    arr = "crossbows";  roll = rollD(20)+level;  pref = rollD(60)+30;  suff = rollD(60)+30;  }
+  else if (roll >= 66 && roll <= 70) {
+    arr = "wands";  roll = rollD(20)+level;  pref = rollD(60)+40;  suff = rollD(60)+40;  }
+  else if (roll >= 71 && roll <= 75) {
+    arr = "staves";  roll = rollD(20)+level;  pref = rollD(60)+40;  suff = rollD(60)+40;  }
+  else if (roll >= 76 && roll <= 79) {
+    arr = "access";  roll = rollD(20)+level;  pref = rollD(60)+30;  suff = rollD(60)+30;  }
+  else if (roll == 80) {
+    // gems -- special case
+    var roll2 = rollD(20)+level;
+	var tempstring = "";
+	if (roll2 < 8) { tempstring = "Chipped"; totalGold += 50; }
+	else if (roll2 >= 8 && roll2 <= 13) { tempstring = "Flawed"; totalGold += 100; }
+	else if (roll2 >= 14 && roll2 <= 19) { tempstring = ""; totalGold += 250; }
+	else if (roll2 >= 20 && roll2 <= 25) { tempstring = "Flawless"; totalGold += 500; }
+	else { tempstring = "Perfect"; totalGold += 1000; }
+	
+	roll2 = rollD(6);
+	if (roll2 == 1) { tempstring += " Amethyst"; }
+	else if (roll2 == 2) { tempstring += " Diamond"; }
+	else if (roll2 == 3) { tempstring += " Emerald"; }
+	else if (roll2 == 4) { tempstring += " Ruby"; }
+	else if (roll2 == 5) { tempstring += " Sapphire"; }
+	else { tempstring += " Topaz"; }
+
+    pref = 0;  suff = 0; 
+    side_effect = "";
+	return tempstring;	}
+
+  else if (roll >= 81 && roll <= 90) {
+    arr = "spells";  roll = rollD(20)+level;  pref = 0;  suff = 95; side_effect+=" hi ";} // add a spell suffix
+  else {
+    arr = "perishables";  roll = rollD(100);  pref = 0;  suff = 0;
+  }
+  
+  return get_array_element (arr, roll);
+  
+}
+
+  
+function get_array_element (whicharray, whatnumber) {
+
+  var i;
+  var firstelement = "";
+  var topbottom = new Array;
+  var arraylength = items[whicharray].length;
+    
+  for (i=0; i<=arraylength; i+=5) {       // loop over the array
+    firstelement = items[whicharray][i];  // get "1-4" or whatever
+    topbottom = firstelement.split('-');
+    if (topbottom.length == 1) {
+	
+	  if (topbottom[0] == whatnumber || topbottom[0].indexOf('+') > 0) {
+        side_effect = items[whicharray][i+2];
+	    totalXP = totalXP + parseInt(items[whicharray][i+3]);
+	    totalGold = totalGold + parseInt(items[whicharray][i+4]);
+	    return items[whicharray][i+1];
+	  }
+
+	} else {
+	  if (topbottom[0] <= whatnumber && topbottom[1] >= whatnumber) {
+        side_effect = items[whicharray][i+2];
+	    totalXP = totalXP + parseInt(items[whicharray][i+3]);
+	    totalGold = totalGold + parseInt(items[whicharray][i+4]);
+	    return items[whicharray][i+1];
+	  }
+	}
+  } 
+  return "*0*";  // error flag
+}
+
+function displayitem() {
+  
+  display("itemplaceholder", "<table width=\"90%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><font face=\"Arial\" size=\"2\" color=\"#FFFFFF\"><b><i>"+makeitem()+"</i></b></font></td></tr></table>");
+
+  display("descripplaceholder", "<table width=\"90%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><font face=\"Arial\" size=\"2\" color=\"#FFFFFF\">"+itemdescrip+"<br><br>XP: "+totalXP.toString()+" &nbsp; Gold: "+totalGold.toString()+"</font></td></tr></table>");
+}
+
+function display(id, str) {
+  if (NS) {
+    with (document[id].document) {
+      open();
+      write(str);
+      close();
+    }
+  } else {
+    document.all[id].innerHTML = str;
+  }
+}
+
+//  1-10	armor (d20+level, uses d60 on prefix and/or suffix table)
+items["armor"] = new Array ("1-4","Cape","AC 10","0","5","5-6","Rags","AC 10","0","10","7-9","Cloak","AC 10","0","15","10-12","Robe","AC 10","0","20","13-14","Quilted Armor","AC 8","0","25","15-17","Leather Armor","AC 8","0","30","18","Hard Leather Armor","AC 7","0","40","19-21","Studded Leather Armor","AC 7","0","50","22-23","Ring Mail","AC 7","0","100","24-25","Scale Mail","AC 6","0","120","26-27","Chainmail","AC 5","0","150","28","Breast Plate","AC 5","0","200","29","Light Plate","AC 4","0","200","30","Splint Mail","AC 4","0","250","31-32","Plate Mail","AC 3","0","600","33","Field Plate","AC 2","0","2000","34","Ancient Armor","AC 2, absorbs 1 hp of damage per attack","0","3750","35","Gothic Plate","AC 1","0","4000","36+","Full Plate Mail","AC 1","0","5000");
+
+//  11-15	headgear (d20+level, uses d60 on prefix and/or suffix table)
+items["headgear"] = new Array ("1-10","Cap","AC 9 against called shots to the head, one per character","0","5","11-14","Skull Cap","AC 8 against called shots to the head, one per character","0","10","15-18","Helm","AC 7 against called shots to the head, one per character","0","15","19","Mask","AC 6 against called shots to the head, one per character","0","20","20-23","Full Helm","AC 5 against called shots to the head, one per character","0","30","24-27","Great Helm","AC 4 against called shots to the head, one per character","0","50","28","Bone Helm","AC 3 against called shots to the head, one per character","0","200","29+","Crown","AC 2 against called shots to the head, one per character","0","250");
+
+//  16-20	accoutrements (d20+level, uses d60 on prefix and/or suffix table)
+items["accout"] = new Array ("1-5","Gloves","AC 8 against called shots to the hands, one pair per character","0","5","6-7","Sash","AC 8 against called shots to the waist, one per character","0","5","8-10","Leather Boots","AC 8 against called shots to the feet, one pair per character","0","5","11-15","Bracers","AC 5 against called shots to the hands, one pair per character","0","15","16-17","Belt","AC 5 against called shots to the waist, one per character","0","15","18-20","Chain Boots","AC 5 against called shots to the feet, one pair per character","0","15","21-25","Gauntlets","AC 3 against called shots to the hands, one pair per character","0","40","26-27","Girdle","AC 3 against called shots to the waist, one per character","0","40","28+","Plate Boots","AC 3 against called shots to the feet, one pair per character","0","40");
+
+//  21-25	shields (d20+level, uses d60 on prefix and/or suffix table)
+items["shields"] = new Array ("1-10","Buckler","AC +1 against one attack per round","0","10","11-16","Small Shield","AC +1 against two attacks per round","0","15","17-21","Large Shield","AC +1 against all attacks","0","20","22-25","Kite Shield","AC +1 against all attacks","0","50","26","Spiked Shield","AC +1 against all attacks, off-hand attack for 1d4/1d4","0","100","27","Bone Shield","AC +2 against all melee attacks (no bonus against missiles)","0","150","28-30","Tower Shield","AC +1 against all attacks, +2 vs. missiles","0","250","31+","Gothic Shield","AC +2 against all attacks, minimum Strength 18","0","500");
+
+//  26-30	knives (d20+level, uses d60+25 on prefix and/or suffix table)
+items["knives"] = new Array ("1-10","Dagger","Damage 1d4/1d3, thrown 10/20/30 (ROF 2/1)","0","5","11-14","Throwing Knife","Damage 1d3/1d3, thrown 10/20/30 (ROF 3/1)","0","10","15-20","Blade","Damage 1d4/1d4, thrown 10/20/30 (ROF 1/1)","0","20","21+","Kris","Damage 1d4+1/1d4, thrown 10/20/30 (ROF 1/1)","0","40");
+
+//  31-40	swords (d20+level, uses d60+25 on prefix and/or suffix table)
+items["swords"] = new Array ("1-5","Dagger","Damage 1d4/1d3, thrown 10/20/30 (ROF 2/1)","0","5","6-10","Short Sword","Damage 1d6/1d8","0","10","11-13","Sabre","Damage 1d6+1/1d8","0","20","14-15","Blade","Damage 1d6+1/1d8+1","0","25","16-17","Scimitar","Damage 1d8/1d8","0","30","18","Falchion","Damage 2d4/1d6","0","35","19-23","Long Sword","Damage 1d8/1d12","0","50","24-27","Broad Sword","Damage 2d4/1d6+1","0","75","28","Claymore","Damage 1d8+1/1d12+1","0","100","29-31","Bastard Sword","Damage 1d8/1d12 one-handed, 2d4/2d8 two-handed","0","150","32-35","Two-Handed Sword","Damage 1d10/3d6 two-handed","0","300","36+","Great Sword","Damage 1d12/2d8 two-handed, minimum Strength 18","0","500");
+
+//  41-44	clubs (d20+level, uses d60+25 on prefix and/or suffix table)
+items["clubs"] = new Array ("1-8","Club","Damage 1d6/1d3, thrown 10/20/30 (ROF 1/1)","0","1","9-10","Spiked Club","Damage 1d6/1d6, thrown 10/20/30 (ROF 1/1)","0","5","11-17","Mace","Damage 1d6+1/1d6","0","10","18-21","Morning Star","Damage 2d4/1d6+1","0","20","22-24","Flail","Damage 1d6+1/2d4 two-handed","0","50","25-30","War Hammer","Damage 1d8/1d8 two-handed","0","60","31-32","Maul","Damage 1d10/1d8+1 two-handed, minimum Strength 18","0","200","33+","Malus","Damage 1d10/1d10 two-handed, minimum Strength 18","0","200");
+
+//  45-48	spears (d20+level, uses d60+25 on prefix and/or suffix table)
+items["spears"] = new Array ("1-8","Javelin","Damage 1d6/1d6, thrown 20/40/60 (ROF 1/1)","0","5","9-15","Spear","Damage 1d6/1d8, thrown 10/20/30 (ROF 1/1)","0","10","16-17","Pilum","Damage 1d6+1/1d8, thrown 10/20/30 (ROF 1/1)","0","25","18-21","Glaive","Damage 1d8/1d8, thrown 10/20/30 (ROF 1/1)","0","30","22-24","Trident","Damage 1d6+1/3d4","0","30","25-30","Pike","Damage 1d6/1d12, double damage when set for charge","0","40","31+","Brandistock","Damage 1d10/2d6, minimum Strength 18, cannot be disarmed","0","100");
+
+//  49-50	polearms (d20+level, uses d60+25 on prefix and/or suffix table)
+items["polearms"] = new Array ("1-8","Bardiche","Damage 2d4/2d6 two-handed","0","20","9-15","Scythe","Damage 1d10/1d12 two-handed, minimum Strength 18","0","40","16-19","Poleaxe","Damage 1d10/1d12 two-handed, minimum Strength 18","0","50","20+","Halberd","Damage 1d10/2d6 two-handed, minimum Strength 18","0","80");
+
+//  51-55	axes (d20+level, uses d60+25 on prefix and/or suffix table)
+items["axes"] = new Array ("1-9","Small Axe","Damage 1d6/1d4","0","5","10-12","Throwing Axe","Damage 1d4/1d4, thrown 10/20/30 (ROF 1/1)","0","10","13-17","Axe","Damage 1d6/1d6","0","10","18-21","Large Axe","Damage 1d6+1/1d6","0","15","22-24","Broad Axe","Damage 1d6+1/1d6+1","0","20","25-30","Battle Axe","Damage 1d8/1d8 two-handed","0","50","31-32","Great Axe","Damage 1d10/1d10 two-handed, minimum Strength 18","0","200","33+","Giant Axe","Damage 1d12/2d8 two-handed, minimum Strength 18(00)","0","200");
+
+//  56-63	bows (d20+level, uses d60+30 on prefix and/or suffix table)
+items["bows"] = new Array ("1-5","Arrows","Damage as per bow","0","3","6-9","Short Bow","Fired 50/100/150 (2/1 ROF), 1d6/1d6","0","30","10-11","Hunter's Bow","Fired 50/100/160 (2/1 ROF), 1d8/1d8","0","50","12-17","Long Bow","Fired 50/100/170 (2/1 ROF), 1d8/1d8","0","75","18-21","Composite Bow","Fired 40/80/170 (2/1 ROF), 1d8/1d8","0","100","22-24","Short Battle Bow","Fired 50/100/150 (2/1 ROF), 1d8/1d8+1","0","150","25-29","Short War Bow","Fired 50/100/150 (2/1 ROF), 1d8+1/1d8+1","0","250","30-31","Long Battle Bow","Fired 50/100/170 (2/1 ROF), 1d8/1d8+1","0","300","32+","Long War Bow","Fired 50/100/170 (2/1 ROF), 1d8+1/1d8+1","0","500");
+
+//  64-65	crossbows (d20+level, uses d60+30 on prefix and/or suffix table)
+items["crossbows"] = new Array ("1-5","Bolts","Damage as per crossbow","0","3","6-12","Light Crossbow","Fired 60/120/180 (1/1 ROF), 1d4/1d4","0","40","13-18","Crossbow","Fired 70/140/210 (1/1 ROF), 1d4/1d6","0","80","19","Repeating Crossbow","Fired 40/60/80 (up to 5/1 ROF), 1d3/1d3, needs 1 round reloading after 5 shots","0","200","20+","Heavy Crossbow","Fired 80/160/240 (1/2 ROF), 1d4+1/1d6+1","0","200");
+
+//  65-70	wands (d20+level, uses d60+40 on prefix and/or suffix table)
+items["wands"] = new Array ("1-10","Wand","Damage 1d2/1d2 one-handed","0","10","11","Torch","Damage 1d3/1d2 fire damage when lit, can be reused, light radius 30'","0","20","12","Bone Wand","Damage 1d3/1d2 one-handed, use restricted to necromancers","0","70","13","Yew Wand","Damage 1d2/1d3 one-handed, use restricted to sorcerers and druids","0","80","14+","Scepter","Damage 1d3/1d3 one-handed","0","100");
+
+//  71-75	staves (d20+level, uses d60+40 on prefix and/or suffix table)
+items["staves"] = new Array ("1-9","Short Staff","Damage 1d4/1d4 one-handed","0","10","10-18","Long Staff","Damage 1d6/1d6 two-handed","0","25","19-21","Gnarled Staff","Damage 1d6/1d6+1 two-handed","0","30","22-24","Composite Staff","Damage 1d6+1/1d6+1 two-handed","0","50","25-30","Battle Staff","Damage 1d6+1/1d8 two-handed","0","75","31+","War Staff","Damage 1d8/1d8 two-handed","0","100");
+
+//  76-79	accessories (d20+level, uses d40+30 on prefix and/or suffix table)
+items["access"] = new Array ("1-6","Charm","Has its effect if carried on person","0","50","7-17","Ring","Worn on hand, one per hand","0","75","18","Flag","Draped over body, one per character","0","100","19","Orb","One per character, worn on arm, cannot use shield while using orb","0","150","20+","Amulet","Worn on neck, one per character","0","200");
+
+//  80	gems (handled by special case)
+
+//  81-90	inscribed spells (d20+level)
+items["spells"] = new Array ("1-17","Scroll","Can be read once to cast spell, at minimum level necessary to cast spell","0","25","18","Rune","Can be set once as a trap, acts as a glyph of warding with the listed spell's effect","0","50","19+","Book","Can be read once to gain the spell, allows one improvement class for its spell","0","100");
+
+//  91-00	perishables (d100)
+items["perishables"] = new Array ("1-2","Potion of Light Healing","Heals 1d4+1 damage","100","500","3-6","Potion of Healing","Heals 2d4+2 damage","200","1000","7-8","Potion of Full Healing","Heals all damage","300","1500","9-11","Potion of Mana","Restores 1 previously cast spell of 1st-3rd level","100","500","12-13","Potion of Full Mana","Restores 1 previously cast spell","200","1000","14-16","Potion of Rejuvenation","Heals 2d4+2 damage and restores 1 previously cast spell of 1st-3rd level","300","1500","17-18","Potion of Full Rejuvenation","Heals all damage and restores 1 previously cast spell","400","2000","19","Detox Potion","Casts slow poison on user for 2d4 turns","100","500","20","Antidote","Casts neutralize poison on user","200","1000","21","Potion of Chi","Gives new save against any mind-affecting spell or effect","100","500","22","Potion of Full Chi","Dispels any mind-affecting spell or affect","300","1500","23","Potion of Restoration","Heals all damage, dispels any mind-affecting spell or effect","500","2500","24","Flaming Oil","flaming oil in 5' radius for 2d4+2 fire damage for 1d4 rounds","100","500","25","Explosive Potion","Explosion in 10' radius for 3d4+3 fire damage (save vs. dragon breath for half)","200","1000","26","Fulminating Potion","Explosion in 20' radius for 6d4+6 fire damage (save vs. dragon breath for half)","300","1500","27","Rancid Gas Potion","Poison gas in a 10' cloud for 1d6+1 poison damage (save vs. poison for half)","100","500","28","Choking Gas Potion","Poison gas in a 10' cloud for 2d6+2 poison damage (save vs. poison for half)","200","1000","29","Strangling Gas Potion","Poison gas in a 10' cloud for 3d6+3 poison damage (save vs. poison for half)","300","1500","30","Acidic Potion","Item must save against acid at -2 or be destroyed","400","2000","31","Energizing Herb","+1 Strength for 1 turn","100","500","32","Strengthening Herb","+2 Strength for 1 turn","200","1000","33","Empowering Herb","+3 Strength for 1 turn","300","1500","34","Artful Herb","+1 Dexterity for 1 turn","100","500","35","Skillful Herb","+2 Dexterity for 1 turn","200","1000","36","Adroit Herb","+3 Dexterity for 1 turn","300","1500","37","Sturdy Herb","+1 Constitution for 1 turn","100","500","38","Hardy Herb","+2 Constitution for 1 turn","200","1000","39","Robust Herb","+3 Constitution for 1 turn","300","1500","40","Sage Herb","+1 Intelligence for 1 turn","100","500","41","Shrewd Herb","+2 Intelligence for 1 turn","200","1000","42","Vivid Herb","+3 Intelligence for 1 turn","300","1500","43","Indigo Herb","+3 save vs. cold and -25% damage from cold for 1 turn","300","1500","44","Cerulean Herb","+4 save vs. cold and -50% damage from cold for 1 turn","400","2000","45","Russet Herb","+3 save vs. fire and -25% damage from fire for 1 turn","300","1500","46","Vermilion Herb","+4 save vs. fire and -50% damage from fire for 1 turn","400","2000","47","Crackling Herb","+3 save vs. lightning and -25% damage from lightning for 1 turn","300","1500","48","Forked Herb","+4 save vs. lightning and -50% damage from lightning for 1 turn","400","2000","49","Swart Herb","+3 save vs. spell and -25% damage from spell for 1 turn","300","1500","50","Atramentous Herb","+4 save vs. spell and -50% damage from spell for 1 turn","400","2000","51","Vital Herb","+3 save vs. poison and -25% damage from poison for 1 turn","300","1500","52","Enduring Herb","+4 save vs. poison and -50% damage from poison for 1 turn","400","2000","53","Urgent Herb","-3 to initiative rolls for 1 turn when attacking with a melee weapon","100","500","54","Fleet Herb","-6 to initiative rolls for 1 turn when attacking with a melee weapon","200","1000","55","Brisk Herb","-3 to initiative rolls for 1 turn when attacking with a missile weapon","100","500","56","Swift Herb","-6 to initiative rolls for 1 turn when attacking with a missile weapon","200","1000","57","Dazzling Herb","user gets 1 extra spell of each level, all must be cast within 1 turn","100","500","58","Fascinating Herb","user gets 2 extra spells of each level, all must be cast within 1 turn","200","1000","59","Bright Herb","+50% hit points for 1 turn","100","500","60","Solar Herb","+100% hit points for 1 turn","200","1000","61","Omniscient Herb","Detect invisibility for 1 turn","100","500","62","Mystical Herb","All of user's spells cast within 1 turn have +50% duration","300","1500","63","Arcane Herb","All of user's spells cast within 1 turn have double duration","400","2000","64-65","Elixir of Strength","+1 Strength for 1 day","1,000","5000","66-67","Elixir of Dexterity","+1 Dexterity for 1 day","1,000","5000","68-69","Elixir of Vitality","+1 Constitution for 1 day","1,000","5000","70","Elixir of Intelligence","+1 Intelligence for 1 day","1,000","5000","71","Elixir of Chi","+1 Wisdom for 1 day","1,000","5000","72","Spectral Elixir","+1 to all abilities for 1 day","3,000","15000","73","Elixir of Fire","+2 save vs. fire for 1 day","500","2500","74","Elixir of Ice","+2 save vs. cold for 1 day","500","2500","75","Elixir of Lightning","+2 save vs. lightning for 1 day","500","2500","76","Elixir of Magic","+2 save vs. spell for 1 day","500","2500","77","Elixir of Psionics","+2 save vs. mind-affecting spells and effects for 1 day","500","2500","78","Elixir of Poison","+2 save vs. poison for 1 day","500","2500","79","Elixir of Energy","+2 on all saves for 1 day","500","2500","80","Elixir of Accuracy","+2 to hit for 1 day","500","2500","81","Elixir of Damage","minimum base damage from user's attacks is 2 for 1 day","500","2500","82","Elixir of Defense","+1 AC for 1 day","500","2500","83","Elixir of Life","+5 hit points for 1 day","500","2500","84","Elixir of Power","+1 1st level spell (if user can cast such spells) for 1 day","500","2500","85","Oil or Resin of Accuracy","Anointed weapon is +2 to hit for 1 turn (50% chance to be Resin)","200","1000","86","Oil or Resin of Precision","Anointed weapon is +3 to hit for 1 turn (50% chance to be Resin)","300","1500","87","Oil or Resin of Mastery","Anointed weapon is +4 to hit for 1 turn (50% chance to be Resin)","400","2000","88","Oil or Resin of Sharpness","Anointed weapon is +2 damage for 1 turn (50% chance to be Resin)","200","1000","89","Oil or Resin of Pain","Anointed weapon is +3 damage for 1 turn (50% chance to be Resin)","300","1500","90","Oil or Resin of Savagery","Anointed weapon is +4 damage for 1 turn (50% chance to be Resin)","400","2000","91","Oil or Resin of Death","Anointed weapon is +5 damage for 1 turn (50% chance to be Resin)","500","2500","92","Oil of Hardening","Anointed weapon gives AC +2 for 1 turn","200","1000","93","Oil of Imperviousness","Anointed weapon gives AC +3 for 1 turn","300","1500","94","Oil of Immunity","Anointed weapon gives AC +4 for 1 turn","400","2000","95","Oil of Skill","Grants proficiency in the anointed item to anyone holding the item for 1 turn","200","1000","96","Oil of Fortitude","Repairs any damage to an item","200","1000","97","Blacksmith's Oil","Gives +4 to item saving throws for 1 turn","300","1500","98","Oil of Permanence","Permanently makes an item indestructible","600","3000","99","Oil of Enchantment","Permanently changes weapon's type (roll new Base Item)","700","3500","100+","Monstrous Body Part","roll d12 for type; for power roll again on this table, as above; if second roll is 00 then roll twice more: 1 Heart 2 Brain 3 Jawbone 4 Eye 5 Ear 6 Horn 7 Tail 8 Fang 9 Quill 10 Scalp 11 Spleen 12 Soul","0","0");
+
+//  Prefixes
+
+//  1-20	improves armor class (d20+level)
+items["pref1"] = new Array ("1-5","Sturdy"," +1 AC (weighs the same as regular armor)","400","2000","6-10","Fine"," +1 AC","500","2500","11-12","Strong"," +1 AC, +2 against missiles","750","3750","13-16","Grand"," +2 AC","1000","5000","17-18","Valiant"," +2 AC, +3 against missiles","1250","6250","19-21","Glorious"," +3 AC","1500","7500","21-22","Blessed"," +3 AC, +4 against missiles","1750","8750","23-24","Awesome"," +4 AC","2000","10000","25-26","Saintly"," +4 AC, +5 against missiles","2500","12500","27-28","Holy"," +5 AC","3000","15000","29+","Godly"," +5 AC, +6 against missiles","3500","17500");
+
+//  21-35	improves saving throws (d20+level)
+items["pref2"] = new Array ("1","Tawny"," +1 save vs. acid","400","2000","2","Azure"," +1 save vs. cold","400","2000","3","Crimson"," +1 save vs. fire","400","2000","4","Ocher"," +1 save vs. lightning","400","2000","5","Pearl"," +1 save vs. mind-affecting spells and effects","400","2000","6","Beryl"," +1 save vs. poison","400","2000","7","Coal"," +1 save vs. spell","400","2000","8","Jasmine"," +2 save vs. acid","800","4000","9","Lapis"," +2 save vs. cold","800","4000","10","Burgundy","+2 save vs. fire","800","4000","11","Tangerine","+2 save vs. lightning","800","4000","12","Ivory","+2 save vs. mind-affecting spells and effects","800","4000","13","Jade","+2 save vs. poison","800","4000","14","Jet","+2 save vs. spell","800","4000","15","Pyrite","+3 save vs. acid and -25% damage from acid","1200","6000","16","Cobalt","+3 save vs. cold and -25% damage from cold","1200","6000","17","Garnet","+3 save vs. fire and -25% damage from fire","1200","6000","18","Coral","+3 save vs. lightning and -25% damage from lightning","1200","6000","19","Crystal","+3 save vs. mind-affecting spells and effects","1200","6000","20","Viridian","+3 save vs. poison and -25% damage from poison","1200","6000","21","Ebony","+3 save vs. spell and -25% damage from spells","1200","6000","22","Crysolite","+4 save vs. acid and -50% damage from acid","1600","8000","23","Sapphire","+4 save vs. cold and -50% damage from cold","1600","8000","24","Ruby","+4 save vs. fire and -50% damage from fire","1600","8000","25","Amber","+4 save vs. lightning and -50% damage from lightning","1600","8000","26","Diamond","+4 save vs. mind-affecting spells and effects","1600","8000","27","Emerald","+4 save vs. poison and -50% damage from poison","1600","8000","28","Obsidian","+4 save vs. spell and -50% damage from spells","1600","8000","29","Topaz","+2 on all saves","2,000","10,000","30+","Prismatic","+3 on all saves","3,000","15,000");
+
+//  35-40	affects foe's reactions (d20+level)
+items["pref3"] = new Array ("1-6","Subduing","foe saves or gets a +5 initiative penalty for 1d4 rounds","1500","7500","7-10","Wearying","foe saves or loses initiative for 1d4 rounds","2000","10000","11","Phasing","foe saves or next attack is at 50% damage as he or she phases out for a moment","2000","10000","12-16","Depleting","foe saves or loses initiative for 2d4 rounds","2000","10000","17-19","Howling","foe saves or suffers fear for 1d4 rounds (if 4 HD/levels or less)","2500","12500","20","Chaotic","foe saves or changes to random alignment for 1d4+1 rounds","2500","12500","21-23","Subjugating","foe saves or loses initiative each round for 4d4 rounds","2500","12500","24-26","Fatiguing","foe saves or is slowed for 1d4 rounds","2500","12500","27-29","Exhausting","foe saves or is slowed for 2d4 rounds","3000","15000","30+","Overwhelming","foe saves or is slowed for 3d4 rounds","3500","17500");
+
+//  41-45	improves skills and spells (d20+level)
+items["pref4"] = new Array ("1-3","Fletcher's","+1 level/score with nonweapon profs and spells (Amazons only)","500","2500","4-6","Slayer's","+1 level/score with nonweapon profs and spells (Barbarians only)","500","2500","7-9","Summoner's","+1 level/score with nonweapon profs and spells (Necromancers only)","500","2500","10-12","Monk's","+1 level/score with nonweapon profs and spells (Paladins only)","500","2500","13-15","Angel's","+1 level/score with nonweapon profs and spells (Sorcerers only)","500","2500","16-17","Archer's","+2 level/score with nonweapon profs and spells (Amazons only)","1000","5000","18-19","Berserker's","+2 level/score with nonweapon profs and spells (Barbarians only)","1000","5000","20-21","Necromancer's","+2 level/score with nonweapon profs and spells (Necromancers only)","1000","5000","22-23","Priest's","+2 level/score with nonweapon profs and spells (Paladins only)","1000","5000","24+","Arch-Angel's","+2 level/score with nonweapon profs and spells (Sorcerers only)","1000","5000");
+
+//  46-49	cursed (roll the base item's prefix roll)
+items["pref5"] = new Array ("1-15","Rusted","-1 AC","0","1","16-25","Vulnerable","-2 AC","0","1","26-35","Glass","-2 on all saves","0","1","36-45","Hyena's","user may not cast spells","0","1","46-55","Frog's","-1 1st level spell per day (if the user can cast such spells)","0","1","56-70","Pitch","any light source carried by user has a -10' radius","0","1","71-75","Brass","-1 to hit","0","1","76-77","Tin","-2 to hit","0","1","78","Crystalline","when damage is dealt add 1d6; if a 6 is rolled, item does no damage and is destroyed","0","1","79-81","Weak","Base damage is halved (round down)","0","1","82-83","Bent","Base damage is reduced to 1","0","1","84-85","Useless","attacking with this item causes no damage","0","1","86-88","Dull","-1 to hit and base damage is halved (round down)","0","1","89+","Clumsy","-2 to hit and base damage is reduced to 1","0","1");
+
+//  50	capricious (unsupported)
+
+// 51-55	affects visibility (d20+level)
+items["pref6"] = new Array ("1-6","Glowing","glows to a 30' radius","500","2500","7-12","Oracular","constant detect invisibility to 60'","1000","5000","13-17","Unseen","user is invisible to all beings more than 30' away","1500","7500","18-21","Hidden","user is invisible to all beings more than 20' away","2000","10000","22-24","Veiled","user is invisible to all beings more than 10' away","2500","12500","25+","Stalking","user is invisible on any round he or she does not move, attack, or cast a spell","3000","15000");
+
+//  56-60	affects number of castable spells (d20+level)
+items["pref7"] = new Array ("1-5","Lizard's","+1 1st level spell per day (if the user can cast such spells)","500","2500","6-9","Spider's","+1 1st & 2nd level spells per day (if the user can cast such spells)","1000","5000","10-13","Raven's","+1 1st-3rd level spells per day (if the user can cast such spells)","1500","7500","14-17","Snake's","+1 1st-4th level spells per day (if the user can cast such spells)","2000","10000","18-21","Serpent's","+1 1st-5th level spells per day (if the user can cast such spells)","2500","12500","22-24","Drake's","+1 1st-6th level spells per day (if the user can cast such spells)","3000","15000","25-26","Dragon's","+1 1st-7th level spells per day (if the user can cast such spells)","3500","17500","27","Wyrm's","+1 1st-8th level spells per day (if the user can cast such spells)","4000","20000","28","Hydra's","+1 1st-9th level spells per day (if the user can cast such spells)","4500","22500","29-30","Devious","when user casts a spell, there is a 1 in 10 chance that it restores itself in memory","4500","22500","31","Fortified","when user casts a spell, there is a 1 in 4 chance that it restores itself in memory","5000","25000","32+","Vulpine","user may reduce any damage by 25% if he or she loses one memorized spell","5500","27500");
+
+//  61-62	affects magical items (d20+level)
+items["pref8"] = new Array ("1-6","Extending","doubles the duration of herbs","500","2500","7-12","Chrono","doubles the duration of oils and resins","500","2500","15-19","Augmenting","doubles the effect of herbs","1000","5000","20+","Catalyzing","doubles the effect of oils and resins","1000","5000");
+
+//  63-70	affects the user's personal statistics (d20+level)
+items["pref9"] = new Array ("1-2","Blue","+1 save vs. cold","400","2000","3-4","Red","+1 save vs. fire","400","2000","5-6","Orange","+1 save vs. lightning","400","2000","7-8","White","+1 save vs. mind-affecting spells and effects","400","2000","9-10","Green","+1 save vs. poison","400","2000","11-12","Black","+1 save vs. spell","400","2000","13-14","Tough","+1 Constitution","500","2500","15-16","Swift","+1 Dexterity","500","2500","17-18","Brilliant","+1 Intelligence","500","2500","19-20","Mighty","+1 Strength","500","2500","21-22","Vibrant","+1 Wisdom","500","2500","23-24","Forceful","+1 1st level spell per day (if the user can cast such spells)","500","2500","25-26","Resilient","+1 AC","500","2500","27-28","Silver","+1 to hit","500","2500","29-30","Muscular","minimum damage per die in melee attacks is 2 points","500","2500","31+","Healthy","+5 hit points","500","2500");
+
+//  71-77	improves to hit scores (d20+level)
+items["pref10"] = new Array ("1-6","Bronze","+1 to hit","500","2500","7-8","Iron","+1 to hit, +2 vs. undead and demonic creatures","750","3,750","9-13","Silver","+2 to hit","1000","5000","14-15","Steel","+2 to hit, +3 vs. undead and demonic creatures","1,250","6,250","16-19","Gold","+3 to hit","1500","7500","20-21","Platinum","+3 to hit, +4 vs. undead and demonic creatures","1,750","8,750","22-25","Mithril","+4 to hit","2000","10000","26-30","Meteoric","+5 to hit","2500","12500","31+","Weird","+5 to hit, extra successful hit on a natural 20","3000","15000");
+
+//  78-82	has a chance for extra damage (d20+level)
+items["pref11"] = new Array ("1-5","Jagged","double base damage on a natural 20","500","2500","6-9","Deadly","double base damage on a natural 19-20","1000","5000","10-13","Vicious","double base damage on a natural 18-20","1000","5000","14-17","Heavy","double base damage on a natural 17-20","1500","7500","18-21","Brutal","double base damage on a natural 16-20","1500","7500","22-25","Massive","double base damage on a natural 15-20","2000","10000","26-29","Savage","double base damage on a natural 14-20","2500","12500","30-33","Ruthless","double base damage on a natural 13-20","3000","15000","34+","Merciless","double base damage on a natural 12-20","3500","17500");
+
+//  83-90	improves to hit scores and has a chance for extra damage (d20+level)
+items["pref12"] = new Array ("1-5","Sharp","+1 to hit, double base damage on a natural 20","1000","5000","6-9","Fine","+1 to hit, double base damage on a natural 19-20","1500","7500","10-13","Warrior's","+2 to hit, double base damage on a natural 18-20","2000","10000","14-17","Soldier's","+2 to hit, double base damage on a natural 17-20","2500","12500","18-21","Knight's","+3 to hit, double base damage on a natural 16-20","3000","15000","22-25","Master's","+3 to hit, double base damage on a natural 15-20","3500","17500","26-29","Doppelganger's","for each attack, roll a d4 and add it to to hit and damage numbers","4000","20000","30-33","Lord's","+4 to hit, double base damage on a natural 14-20","4000","20000","34-37","Champion's","+4 to hit, double base damage on a natural 13-20","4500","22500","38+","King's","+5 to hit, double base damage on a natural 12-20","5000","25000");
+
+//  91-00	affects item's charges (d20+level)
+items["pref13"] = new Array ("1-15","Plentiful","Has twice the normal maximum charges","1500","7500","16","Jester's","Casts a random spell when activated","2000","10000","17+","Bountiful","Has three times the normal maximum charges","2500","12500");
+
+//  Suffixes
+
+//  1-20	reduces damage suffered (d20+level)
+items["suff1"] = new Array ("1-11","of Health","-1 hit point of damage suffered with each attack","500","2500","12-17","of Protection","-2 hit points of damage suffered with each attack","1000","5000","18-22","of Absorption","-3 hit points of damage suffered with each attack","1500","7500","23-26","of Life","-4 hit points of damage suffered with each attack","2000","10000","27+","of Deflection","-5 hit points of damage suffered with each attack","2500","12500");
+
+//  21-25	has an effect when attacked (d20+level)
+items["suff2"] = new Array ("1-10","of Thorns","successful melee attack against the wearer inflicts 1d4 damage on the attacker","1000","5000","11-18","of Spikes","successful melee attack against the wearer inflicts 2d4 damage on the attacker","1500","7500","19+","of Blocking","extra attack/round when using this item to parry or as armor 2d4 damage on the attacker","2000","10000");
+
+//  26-30	improves durability (d20+level)
+items["suff3"] = new Array ("1-10","of Sturdiness","Item gets +2 on item saving throws","500","2500","11-14","of Structure","Item gets +4 on item saving throws","1000","5000","15-17","of the Ages","Item cannot be damaged or destroyed","1500","7500","18-19","of Bonding","every item carried gets +2 on item saving throws","1500","7500","20+","of Unity","every item carried gets +4 on item saving throws","2000","10000");
+
+//  31-35	increases hit points (d20+level)
+items["suff4"] = new Array ("1-8","of the Jackal","+4 hit points","500","2500","9-13","of the Fox","+6 hit points","1000","5000","14-17","of the Jaguar","+8 hit points","1500","7500","18-21","of the Wolf","+10 hit points","2000","10000","22-23","of the Eagle","+12 hit points","2500","12500","24-25","of the Tiger","+15 hit points","3000","15000","26-27","of the Lion","+18 hit points","3500","17500","28-29","of the Mammoth","+20 hit points","4000","20000","30-31","of the Whale","+25 hit points","4500","22500","32+","of the Colossus","+30 hit points","5000","25000");
+
+//  36-45	increases ability scores (d20+level)
+items["suff5"] = new Array ("1-2","of Vitality","+1 Constitution","500","2500","3-4","of Dexterity","+1 Dexterity","500","2500","5-6","of Magic","+1 Intelligence","500","2500","7-8","of Strength","+1 Strength","500","2500","9-10","of the Lynx","+1 Wisdom","500","2500","11-12","of Zest","+2 Constitution","1000","5000","13-14","of Skill","+2 Dexterity","1000","5000","15-16","of the Mind","+2 Intelligence","1000","5000","17-18","of Might","+2 Strength","1000","5000","19-20","of the Leopard","+2 Wisdom","1000","5000","21","of Vim","+3 Constitution","1500","7500","22","of Accuracy","+3 Dexterity","1500","7500","23","of Brilliance","+3 Intelligence","1500","7500","24","of Power","+3 Strength","1500","7500","25","of the Jaguar","+3 Wisdom","1500","7500","26","of Vigor","+4 Constitution","2000","10000","27","of Precision","+4 Dexterity","2000","10000","28","of Sorcery","+4 Intelligence","2000","10000","29","of the Giant","+4 Strength","2000","10000","30","of the Tiger","+4 Wisdom","2000","10000","31","of Life","+5 Constitution","2500","12500","32","of Perfection","+5 Dexterity","2500","12500","33","of Wizardry","+5 Intelligence","2500","12500","34","of the Titan","+5 Strength","2500","12500","35","of the Lion","+5 Wisdom","2500","12500","36","of the Sky","+1 to all ability scores","3000","15000","37","of the Moon","+2 to all ability scores","4000","20000","38","of the Stars","+3 to all ability scores","6000","30000","39","of the Heavens","+4 to all ability scores","8000","40000","40+","of the Zodiac","+5 to all ability scores","10000","50000");
+
+// 46-49	cursed (roll the base item's suffix roll)
+items["suff6"] = new Array ("1-15","of Tears","+1 hit point of damage suffered with each attack","0","1","16-25","of Pain","+2 hit points of damage suffered with each attack","0","1","26-27","of Brittleness","every hit by this item requires a save vs. crushing blow or it is destroyed","0","1","28-29","of Decay","+2 damage, every hit requires a save vs. crushing blow or it is destroyed","0","1","30","of Fragility","on the first use of this item in combat, it is destroyed","0","1","31-40","of the Vulture","-1d6 hit points","0","1","41-42","of Disease","-1 Constitution","0","1","43-44","of Atrophy","-1 Dexterity","0","1","45-46","of Dyslexia","-1 Intelligence","0","1","47-48","of Weakness","-1 Strength","0","1","49-50","of the Cat","-1 Wisdom","0","1","51","of the Pit","-1 to all ability scores","0","1","52","of Illness","-2 Constitution","0","1","53","of Paralysis","-2 Dexterity","0","1","54","of Draining","-2 Intelligence","0","1","55","of Frailty","-2 Strength","0","1","56","of the Rat","-2 Wisdom","0","1","57","of Trouble","-2 to all ability scores","0","1","58","of Pox","user cannot regain hit points while in possession of this item","0","1","59","of Corruption","user cannot restore cast spells while in possession of this item","0","1","60","of Infection","spells that affect only the user's mind last until dispelled","0","1","61","of Ruin","1 spell per day must be memorized as if it were 1 level higher","0","1","62","of the Exposed","2 spells per day must be memorized as if they were 1 level higher","0","1","63-64","of Discord"," +1 initiative penalty when casting spells","0","1","65-67","of the Night","any light source carried by user has a -10' radius","0","1","68-69","of the Dark","any light source carried by user has a -20' radius","0","1","70","of the Void","any light source carried by user has a -30' radius","0","1","71-80","of Passivity","+2 initiative penalty when attacking with this item","0","1","81-90","of the Snail","user may only attack once per two rounds when using this item","0","1","91+","of the Fool","one random memorized spell per day vanishes after memorization","0","1");
+
+// 50	capricious (unsupported)
+
+// 51-53	improves recovery (d20+level)
+items["suff7"] = new Array ("1-15","of Regeneration","when regaining hit points, user regains +25% of the amount (up to maximum)","2000","10000","16+","of Regrowth","when regaining hit points, user regains +50% of the amount (up to maximum)","3500","17500");
+
+// 54-56	affects spell memorization (d20+level)
+items["suff8"] = new Array ("1-10","of Warding","1 spell per day may be memorized as if it were 1 level lower","1000","5000","14-22","of the Sentinel","2 spells per day may be memorized as if they each were 1 level lower","1500","7500","23-28","of Guarding","3 spells per day may be memorized as if they each were 1 level lower","2000","10000","29-34","of Negation","4 spells per day may be memorized as if they each were 1 level lower","2500","12500","35+","of Osmosis","5 spells per day may be memorized as if they each were 1 level lower","3000","15000");
+
+//  57-60	affects actions in combat (d20+level)
+items["suff9"] = new Array ("1-9","of the Apprentice","-1 initiative when casting spells","500","2500","10-13","of the Magus","-2 initiative when casting spells","1000","5000","14-16","of Balance","foe gets +1 initiative penalty in melee combat","1000","5000","17-18","of Stability","foe gets +2 initiative penalty in melee combat","1500","7500","19+","of Harmony","foe gets +3 initiative penalty in melee combat","2000","10000");
+
+//  61-63	improves treasure finding (d20+level)
+items["suff10"] = new Array ("1-10","of Greed","dungeon level is +2 on random gold tables","1500","7500","11-18","of Chance","dungeon level is +2 on random magic item tables","2000","10000","19-26","of Wealth","dungeon level is +4 on random gold tables","2000","10000","27+","of Fortune","dungeon level is +4 on random magic item tables","2500","12500");
+
+//  64-67	improves light sources (d20+level)
+items["suff11"] = new Array ("1-13","of Light","any light source carried by user has a +10' radius","500","2500","14-18","of Radiance","any light source carried by user has a +20' radius","750","3,750","19+","of the Sun","any light source carried by user has a +30' radius","1000","5000");
+
+//  68-70	reduces effects of hazards (d20+level)
+items["suff12"] = new Array ("1-8","of the Thief","+33% find/remove traps, -50% damage from traps","750","3,750","9-14","of Warmth","gives immunity to non-damaging effects of cold","1000","5000","15-18","of Remedy","additional save vs. poison, -1d6 damage from poison","1000","5000","19-21","of Amelioration","additional save vs. poison at +2, -2d6 damage from poison","1500","7500","22-23","of Defiance","additional save vs. poison at +4, -3d6 damage from poison","2000","10000","24+","of Purging","additional save vs. poison, slow poison for 1d6 rounds","2500","12500");
+
+//  71-73	increases damage (d20+level)
+items["suff13"] = new Array ("1-4","of Craftsmanship","+1 damage","500","2500","5-8","of Quality","+1 damage, +2 damage vs. larger than man-sized creatures","750","3,750","9-11","of Maiming","+2 damage","1000","5000","12-14","of Slaying","+2 damage, +3 damage vs. larger than man-sized creatures","1,250","6,250","15-17","of Gore","+3 damage","1500","7500","18","of Devastation","if maximum base damage is rolled then triple damage","1,750","8,750","19","of the Jester","when damage is rolled, multiply by 1d4; on a 4, no damage is dealt","2000","10000","20-22","of Carnage","+4 damage ","2000","10000","23+","of Slaughter","+5 damage","2500","12500");
+
+//  74-75	improves minimum damage (d20+level)
+items["suff14"] = new Array ("1-8","of Measure","minimum base damage with this item is 2","500","2500","9-15","of Worth","minimum base damage with this item is 3","1000","5000","16-20","of Excellence","minimum base damage with this item is 4","1500","7500","21+","of Performance","minimum base damage with this item is 5","2000","10000");
+
+//  76-77	affects attack speed (d20+level)
+items["suff15"] = new Array ("1-8","of Readiness","-1 initiative when attacking with this item","500","2500","9-15","of Alacrity","-2 initiative when attacking with this item","750","3,750","16-19","of Swiftness","-3 initiative when attacking with this item","1000","5000","20-22","of Quickness","-4 initiative when attacking with this item","1500","7500","23-27","of Speed","user always wins initiative when attacking with this item","2000","10000","28+","of Haste","one extra attack per round","2500","12500");
+
+//  78-80	adds effects to damaged foe (d20+level)
+items["suff16"] = new Array ("1-3","of Frost","+1d6 cold damage","500","2500","4-6","of Flame","+1d6 fire damage","500","2500","7-9","of Shock","+1d6 lightning damage","500","2500","10-12","of Blight","+1d6 poison damage","500","2500","13-14","of Ice","+2d6 cold damage","1000","5000","15-16","of Fire","+2d6 fire damage","1000","5000","17-18","of Lightning","+2d6 lightning damage","1000","5000","19-20","of Venom","+2d6 poison damage","1000","5000","21","of the Glacier","+3d6 cold damage","1500","7500","22","of Burning","+3d6 fire damage","1500","7500","23","of Thunder","+3d6 lightning damage","1500","7500","24","of Pestilence","+3d6 poison damage","1500","7500","25","of Vileness","wounds caused by this item can only be healed magically, negating regeneration","1500","7500","26","of the Crusaders","+1 cumulative damage per successful consecutive attack against same foe","2000","10000","27","of Destruction","foe's armor class is added to the weapon's damage","2000","10000","28","of Peril","on a hit, foe takes double damage and wielder takes normal damage","2500","12500","29-30","of the Bear","knocks foe out of melee range (10' away) on a successful hit","2500","12500","31+","of the Grizzly","knocks foe out of melee range (20' away) on a successful hit","3000","15000");
+
+//  81-82	restores on a successful hit (d20+level)
+items["suff17"] = new Array ("1-5","of the Leech","hit heals the user 1d4 hit points","1500","7500","6-9","of the Claw","hit against a spellcaster restores one of user's cast 1st-3rd level Priest spells","2000","10000","10-13","of the Bat","hit against a spellcaster restores one of user's cast 1st-3rd level Wizard spells","2000","10000","14-17","of Blood","hit heals the user 1d6 hit points","2000","10000","18-20","of the Talon","hit against a spellcaster restores one of user's cast Priest spells","2500","12500","21-23","of the Vampire","hit against a spellcaster restores one of user's cast Wizard spells","2500","12500","24+","of the Lamprey","hit heals the user 2d4 hit points","3000","15000");
+
+//  83-84	causes damage to armor or weapons (d20+level)
+items["suff18"] = new Array ("1-7","of Piercing","on a natural 20, foe's armor saves vs. crushing blow or is destroyed","2000","10000","8-14","of Breaking","on a natural 20, foe's weapon saves vs. crushing blow or is destroyed","2500","12500","15-21","of Puncturing","on a natural 19 or 20, foe's armor saves vs. crushing blow or is destroyed","2500","12500","22-28","of Smashing","on a natural 19 or 20, foe's weapon saves vs. crushing blow or is destroyed","3000","15000","29+","of Bashing","on a natural 18, 19 or 20, foe's armor saves vs. crushing blow or is destroyed","3500","17500");
+
+//  85	affects weapon proficiencies (d20+level)
+items["suff19"] = new Array ("1-13","of Ease","grants proficiency in using the item","1000","5000","14+","of Simplicity","grants proficiency and specialization in using the item","2000","10000");
+
+//  86-90	affects available uses (d20+level)
+items["suff20"] = new Array ("1-13","of Many","Can fire one charge/arrow per round for free (others cost or must be provided)","1500","7500","14+","of Plenty","Can fire two charges/arrows per round for free (others cost or must be provided)","3000","15000");
+
+//  91-00	allows the casting of a spell (d20+level), maximum 10d10 charges, all are rechargeable (except inscribed spells)
+
+items["spells1"] = new Array ("Charged Arrow", "Fire Arrow","Inner Sight", "Magic Arrow", "Bestow","Blessed Hammer", "Holy Shield", "Shepherd", "Amplify Damage", "Bone Orb","Familiar", "Identify", "Reanimate", "Teeth", "Charged Bolt","Fire Bolt", "Frost", "Frozen Armor", "Ice Bolt", "Identify Item");
+items["spells2"] = new Array ("Poison Arrow","Power Strike", "Cold Arrow", "Holy Bolt","Sacrifice", "Vengeance", "Berserk", "Clay Golem", "Corpse Explosion", "Dim Vision", "Poison Inferno", "Weaken", "Frost Nova", "Ice Blast", "Inferno", "Static Field");
+items["spells3"] = new Array ("Caustic Arrow", "Exploding Arrow","Bless Weapon", "Consecrated Bolt", "Lesser Aura", "Glorious Light","Protection from Normal Missiles","Blood Golem", "Bone Wall", "Create Zombies", "Iron Maiden","Phasing","Rebuke Dead", "Taint","Blaze", "Fireball", "Lightning Bolt", "Nova", "Phasing","Shivers","Telekinetic Hand");
+items["spells4"] = new Array ("Guided Arrow", "Redemption","Impale","Plague Arrow","Attract", "Bone Spear", "Confusion","Dimension Door","Homunculus","Lower Resistance", "Reverse Vampire", "Warp", "Confusion", "Dimension Door", "Enchant","Enchanted Weapon", "Energy Shield","Flame Wave","Glacial Spike","Lightning Wall", "Wall of Fire","Warp");
+items["spells5"] = new Array ("Fist of Fury","Valkyrie","Greater Aura","Consecrate Weapon", "Bone Prison","Decrepify","Mind Control","Summon Undead","Town Portal", "Flash","Immolation","Meteor","Town Portal");
+items["spells6"] = new Array ("Lightning Fury","Lightning Strike","Conversion","Heavenly Fist","True Seeing", "Bone Spirit","Dismiss Undead","Guardian","Blood Star","Chain Lightning","Elemental","Guardian");
+items["spells7"] = new Array ("Bone Golem","Death Curse","Revive","Iron Golem", "Golem","Stone Curse","Thunder Storm");
+items["spells8"] = new Array ("Poison Nova","Hydra","Ice Maelstrom");
+items["spells9"] = new Array ("Apocalypse","Death Wave");
+
+items["suff21"] = new Array ("1-10","spells1","spells1","500","2500","11-15","spells2","spells2","1000","5000","16-20","spells3","spells3","1500","7500","21-24","spells4","spells4","2000","10000","25-27","spells5","spells5","2500","12500","28-30","spells6","spells6","3000","15000","31-33","spells7","spells7","3500","17500","34-35","spells8","spells8","4000","20000","36+","spells9","spells9","4500","22500");
+
+// -->
+</SCRIPT>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="382" height="394" border="0" cellspacing="0" cellpadding="5" background="DiabloII_Item_Back2.jpg">
+  <tr background="DiabloII_Item_Back2.jpg"> 
+    <td> <font face="Arial,Helvetica,sans-serif" size="2"> <br>
+      <br>
+      <font color="#FFFFFF"> <b><i><SPAN ID="itemplaceholder" STYLE="position: absolute; top: 145; left: 70;"></SPAN></i></b> 
+      <br>
+      <br>
+<SPAN ID="descripplaceholder" STYLE="position: absolute; top: 180; left: 70;"></SPAN>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<form name="form1"><table align="center" border="0" cellpadding="2" cellspacing="0">
+<tr>
+<td bgcolor="black" background="diabloII_clear.gif"><div align="center"><font size="2" color="white" face="Arial,helvetica,sans-serif"><b>Upgrade<br>Level:</b><br>
+<select name="upgradelevel">
+<option value="0">Mundane</option>
+<option value="3">Nightmare</option>
+<option value="6">Hell</option>
+</select>
+</font></div></td>
+<td bgcolor="black" background="diabloII_clear.gif">&nbsp;</td>
+<td bgcolor="black" background="diabloII_clear.gif"><div align="center"><font size="2" color="white" face="Arial,helvetica,sans-serif"><b>Dungeon<br>Level:</b>
+<br>
+<select name="dungeonlevel">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+</select>
+</font></div></td>
+<td bgcolor="black" background="diabloII_clear.gif">&nbsp;</td>
+<td bgcolor="black" background="diabloII_clear.gif">
+<a href="javascript:void(null)" onclick="displayitem()"><img src="DiabloII_Button_1.jpg" width="123" height="42" border="0" alt="Generate Item"></a></td>
+</tr>
+</table>
+</form>
+</font>
+
+</font>
+<p>
+      <div align="center"><font size="1" face="Arial,Helvetica,sans-serif" color="#000000">©2000 
+        Wizards of the Coast, Inc. All rights reserved</font><font size="1" face="Arial,Helvetica,sans-serif" color="White">.</font></div>
+</td>
+</tr>
+</table>
+</body>
+</html>

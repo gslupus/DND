@@ -1,0 +1,598 @@
+* A * at the beginning of a line is a commented line; if you place one
+* in front of a spell, the generator will skip that spell and not 
+* consider it while generating a random spell list.  Be sure to keep 
+* the columns aligned as they are at distribution, even if you add a 
+* couple thousand more spells.  Use spaces, NO tabs.
+*
+* Other Symbols:
+*   !	Spells preceded by this will always appear as part of the random
+*	list and do not count towards random spell total. Do not worry
+*	about the columns not being straight -- it's fine...
+* Number of Spells: 327
+*Source             Title                                              Type         Level
+*----------------------------------------------------------------------------------------
+Player's Guide      Affect Normal Fires                                Magic-User   1
+Player's Guide      Alarm                                              Magic-User   1
+Player's Guide      Armor                                              Magic-User   1
+Player's Guide      Audible Glamor                                     Magic-User   1
+Red Wizard          Aura Fire                                          Magic-User   1
+Player's Guide      Burning Hands                                      Magic-User   1
+Player's Guide      Cantrip                                            Magic-User   1
+Forgotten Realms    Catapult                                           Magic-User   1
+Player's Guide      Change Self                                        Magic-User   1
+Player's Guide      Charm Person                                       Magic-User   1
+Player's Guide      Chill Touch                                        Magic-User   1
+Wizard's Handbook   Chromatic Orb                                      Magic-User   1
+Red Wizard          Circle                                             Magic-User   1
+Player's Guide      Color Spray                                        Magic-User   1
+Player's Guide      Comprehend Languages (Confound Languages)          Magic-User   1
+Tome of Magic       Conjure Spell Components                           Magic-User   1
+Wizard's Handbook   Copy                                               Magic-User   1
+Forgotten Realms    Corpselight                                        Magic-User   1
+Wizard's Handbook   Corpse Visage                                      Magic-User   1
+Player's Guide      Dancing Lights                                     Magic-User   1
+Red Wizard          Deny Cold                                          Magic-User   1
+Wizard's Handbook   Detect Disease                                     Magic-User   1
+!Player's Guide      Detect Magic                                       Magic-User   1
+Player's Guide      Detect Undead                                      Magic-User   1
+Red Wizard          Detho's Delerium                                   Magic-User   1
+Wizard's Handbook   Divining Rod                                       Magic-User   1
+Player's Guide      Enlarge (Reduce)                                   Magic-User   1
+Player's Guide      Erase                                              Magic-User   1
+Player's Guide      Feather Fall                                       Magic-User   1
+Player's Guide      Find Familiar                                      Magic-User   1
+Tome of Magic       Fire Burst                                         Magic-User   1
+Tome of Magic       Fist of Stone                                      Magic-User   1
+Player's Guide      Friends                                            Magic-User   1
+Player's Guide      Gaze Reflection                                    Magic-User   1
+Player's Guide      Grease                                             Magic-User   1
+Player's Guide      Hold Portal                                        Magic-User   1
+Tome of Magic       Hornung's Guess                                    Wild Magic   1
+Player's Guide      Hypnotism                                          Magic-User   1
+Player's Guide      Identify                                           Magic-User   1
+Player's Guide      Jump                                               Magic-User   1
+Forgotten Realms    Know School                                        Magic-User   1
+Tome of Magic       Lasting Breath                                     Magic-User   1
+Player's Guide      Light                                              Magic-User   1
+!Player's Guide      Magic Missile                                      Magic-User   1
+Player's Guide      Mending                                            Magic-User   1
+Player's Guide      Message                                            Magic-User   1
+Tome of Magic       Metamorphose Liquids                               Magic-User   1
+Player's Guide      Mount                                              Magic-User   1
+Tome of Magic       Murdock's Feathery Flyer                           Magic-User   1
+Tome of Magic       Nahal's Reckless Dweomer                           Wild Magic   1
+Player's Guide      Nystul's Magic Aura                                Magic-User   1
+Tome of Magic       Patternweave                                       Wild Magic   1
+Player's Guide      Phantasmal Force                                   Magic-User   1
+Player's Guide      Protection from Evil (Good)                        Magic-User   1
+Wizard's Handbook   Protection from Hunger / Thirst                    Magic-User   1
+!Player's Guide      Read Magic                                         Magic-User   1
+Forgotten Realms    Scatterspray                                       Magic-User   1
+Player's Guide      Shield                                             Magic-User   1
+Player's Guide      Shocking Grasp                                     Magic-User   1
+Player's Guide      Sleep                                              Magic-User   1
+Forgotten Realms    Snilloc's Snowball                                 Magic-User   1
+Player's Guide      Spider Climb                                       Magic-User   1
+Drow Guide          Spidereyes                                         Magic-User   1
+Player's Guide      Spook                                              Magic-User   1
+Red Wizard          Summon Undead                                      Magic-User   1
+Player's Guide      Taunt                                              Magic-User   1
+Player's Guide      Tenser's Floating Disc                             Magic-User   1
+Player's Guide      Unseen Servant                                     Magic-User   1
+Player's Guide      Ventriloquism                                      Magic-User   1
+Player's Guide      Wall of Fog                                        Magic-User   1
+Player's Guide      Wizard Mark                                        Magic-User   1
+Forgotten Realms    Agannazar's Scorcher                               Magic-User   2
+Player's Guide      Alter Self                                         Magic-User   2
+Player's Guide      Bind                                               Magic-User   2
+Forgotten Realms    Bladethirst                                        Magic-User   2
+Player's Guide      Blindness                                          Magic-User   2
+Player's Guide      Blur                                               Magic-User   2
+Tome of Magic       Chaos Shield                                       Wild Magic   2
+Wizard's Handbook   Choke                                              Magic-User   2
+Forgotten Realms    Cloak from Undead                                  Magic-User   2
+Forgotten Realms    Cloak Undead                                       Magic-User   2
+Red Wizard          Combust                                            Magic-User   2
+Player's Guide      Continual Light                                    Magic-User   2
+Player's Guide      Darkness, 15' Radius                               Magic-User   2
+Player's Guide      Deafness                                           Magic-User   2
+Wizard's Handbook   Death Recall                                       Magic-User   2
+Forgotten Realms    Decastave                                          Magic-User   2
+Player's Guide      Deeppockets                                        Magic-User   2
+Red Wizard          Deny Fire                                          Magic-User   2
+Player's Guide      Detect Evil (Detect Good)                          Magic-User   2
+Player's Guide      Detect Invisible                                   Magic-User   2
+Wizard's Handbook   Detect Life                                        Magic-User   2
+Player's Guide      ESP                                                Magic-User   2
+Wizard's Handbook   Filter                                             Magic-User   2
+Red Wizard          Flame Dagger                                       Magic-User   2
+Player's Guide      Flaming Sphere                                     Magic-User   2
+Red Wizard          Flash                                              Magic-User   2
+Forgotten Realms    Flying Fist                                        Magic-User   2
+Player's Guide      Fog Cloud                                          Magic-User   2
+Player's Guide      Fool's Gold                                        Magic-User   2
+Player's Guide      Forget                                             Magic-User   2
+Forgotten Realms    Ghost Pipes                                        Magic-User   2
+Wizard's Handbook   Ghoul Touch                                        Magic-User   2
+Player's Guide      Glitterdust                                        Magic-User   2
+Tome of Magic       Hornung's Baneful Deflector                        Wild Magic   2
+Player's Guide      Hypnotic Pattern                                   Magic-User   2
+Wizard's Handbook   Ice Knife                                          Magic-User   2
+Player's Guide      Improved Phantasmal Force                          Magic-User   2
+Tome of Magic       Insatiable Thirst                                  Magic-User   2
+Player's Guide      Invisibility                                       Magic-User   2
+Player's Guide      Irritation                                         Magic-User   2
+Player's Guide      Knock (or Reverse)                                 Magic-User   2
+Player's Guide      Know Alignment (or Reverse)                        Magic-User   2
+Player's Guide      Leomund's Trap                                     Magic-User   2
+Player's Guide      Levitate                                           Magic-User   2
+Player's Guide      Locate Object (or Reverse)                         Magic-User   2
+Player's Guide      Magic Mouth                                        Magic-User   2
+Tome of Magic       Max's Earthen Grasp                                Magic-User   2
+Player's Guide      Melf's Acid Arrow                                  Magic-User   2
+Player's Guide      Mirror Image                                       Magic-User   2
+Player's Guide      Misdirection                                       Magic-User   2
+Tome of Magic       Nahal's Nonsensical Nullifier                      Wild Magic   2
+Tome of Magic       Past Life                                          Magic-User   2
+Red Wizard          Power Word: Sleep                                  Magic-User   2
+Red Wizard          Predict Weather                                    Magic-User   2
+Player's Guide      Protection from Cantrips                           Magic-User   2
+Red Wizard          Protection from Normal Weapons                     Magic-User   2
+Tome of Magic       Protection from Paralysis                          Magic-User   2
+Red Wizard          Protection from Plants                             Magic-User   2
+Red Wizard          Protection from Poison                             Magic-User   2
+Red Wizard          Protection Spec. Lycanthropes 10%                  Magic-User   2
+Player's Guide      Pyrotechnics                                       Magic-User   2
+Forgotten Realms    Quimby's Ench. Gourmet                             Magic-User   2
+Player's Guide      Ray of Enfeeblement                                Magic-User   2
+Red Wizard          Resist Energy Drain                                Magic-User   2
+Tome of Magic       Ride the Wind                                      Magic-User   2
+Player's Guide      Rope Trick                                         Magic-User   2
+Player's Guide      Scare                                              Magic-User   2
+Tome of Magic       Sense Shifting                                     Magic-User   2
+Player's Guide      Shatter                                            Magic-User   2
+Drow Guide          Skyhook                                            Magic-User   2
+Forgotten Realms    Snilloc's Snowball Swarm                           Magic-User   2
+Red Wizard          Speak w/ Dead                                      Magic-User   2
+Player's Guide      Spectral Hand                                      Magic-User   2
+Player's Guide      Stinking Cloud                                     Magic-User   2
+Player's Guide      Strength                                           Magic-User   2
+Player's Guide      Summon Swarm                                       Magic-User   2
+Player's Guide      Tasha's Unbearable Hideous Laughter                Magic-User   2
+Forgotten Realms    Undead Mount                                       Magic-User   2
+Forgotten Realms    Vocalize                                           Magic-User   2
+Player's Guide      Web                                                Magic-User   2
+Player's Guide      Whispering Wind                                    Magic-User   2
+Player's Guide      Wizard Lock                                        Magic-User   2
+Tome of Magic       Alacrity                                           Magic-User   3
+Tome of Magic       Alamir's Fundamental Breakdown                     Magic-User   3
+Tome of Magic       Alternate Reality                                  Wild Magic   3
+Red Wizard          Assist                                             Magic-User   3
+Tome of Magic       Augmentation                                       Magic-User   3
+Forgotten Realms    Blacklight                                         Magic-User   3
+Player's Guide      Blink                                              Magic-User   3
+Wizard's Handbook   Bone Club                                          Magic-User   3
+Red Wizard          Chant                                              Magic-User   3
+Red Wizard          Charm Undead                                       Magic-User   3
+Player's Guide      Clairaudience                                      Magic-User   3
+Player's Guide      Clairvoyance                                       Magic-User   3
+Drow Guide          Dark Wings                                         Magic-User   3
+Wizard's Handbook   Delay Death                                        Magic-User   3
+Player's Guide      Delude                                             Magic-User   3
+Forgotten Realms    Dire Charm                                         Magic-User   3
+Player's Guide      Dispel Magic                                       Magic-User   3
+Forgotten Realms    Dispel Silence                                     Magic-User   3
+Player's Guide      Explosive Runes                                    Magic-User   3
+Tome of Magic       Far Reaching I                                     Magic-User   3
+Player's Guide      Feign Death                                        Magic-User   3
+Red Wizard          Find Traps                                         Magic-User   3
+!Player's Guide      Fireball                                           Magic-User   3
+Tome of Magic       Fireflow                                           Wild Magic   3
+Player's Guide      Flame Arrow                                        Magic-User   3
+Player's Guide      Fly                                                Magic-User   3
+Tome of Magic       Fool's Speech                                      Wild Magic   3
+Forgotten Realms    Ghost Armor                                        Magic-User   3
+Player's Guide      Gust of Wind                                       Magic-User   3
+Drow Guide          Hand of Darkness                                   Magic-User   3
+Player's Guide      Haste                                              Magic-User   3
+Player's Guide      Hold Person                                        Magic-User   3
+Player's Guide      Hold Undead                                        Magic-User   3
+Forgotten Realms    Hold Vapor                                         Magic-User   3
+Wizard's Handbook   Hovering Skull                                     Magic-User   3
+Forgotten Realms    Icelance                                           Magic-User   3
+Player's Guide      Illusionary Script                                 Magic-User   3
+Player's Guide      Infravision                                        Magic-User   3
+Wizard's Handbook   Invisible Mail                                     Magic-User   3
+Player's Guide      Invisibility, 10'R                                 Magic-User   3
+Wizard's Handbook   Iron Mind                                          Magic-User   3
+Player's Guide      Item                                               Magic-User   3
+Forgotten Realms    Lacral's Dancing Dweomer                           Magic-User   3
+Player's Guide      Leomund's Tiny Hut                                 Magic-User   3
+!Player's Guide      Lightning Bolt                                     Magic-User   3
+Tome of Magic       Lorleveim's Creeping Shadow                        Magic-User   3
+Tome of Magic       Maximillian's Stony Grasp                          Magic-User   3
+Player's Guide      Melf's Minute Meteors                              Magic-User   3
+Tome of Magic       Minor Malison                                      Magic-User   3
+Player's Guide      Monster Summoning I                                Magic-User   3
+Forgotten Realms    Mummy Touch                                        Magic-User   3
+Forgotten Realms    NChaser's Glowing Globe                            Magic-User   3
+Player's Guide      Non-Detection                                      Magic-User   3
+Wizard's Handbook   Pain Touch                                         Magic-User   3
+Forgotten Realms    Paralyze                                           Magic-User   3
+Player's Guide      Phantom Steed                                      Magic-User   3
+Forgotten Realms    Proof from Teleportation                           Magic-User   3
+Red Wizard          Protection from All Lycanthropes, 10'R             Magic-User   3
+Red Wizard          Protection from Electricity                        Magic-User   3
+Player's Guide      Protection from Evil, 10' (Good)                   Magic-User   3
+Red Wizard          Protection from Illusions                          Magic-User   3
+Red Wizard          Protection from Magic Weapons                      Magic-User   3
+Red Wizard          Protection from Normal Missiles                    Magic-User   3
+Red Wizard          Protection from Specific Element, 10'              Magic-User   3
+Red Wizard          Protection from Specific Undead,  5'               Magic-User   3
+Red Wizard          Protection from Water                              Magic-User   3
+Forgotten Realms    Revenance                                          Magic-User   3
+Player's Guide      Secret Page                                        Magic-User   3
+Player's Guide      Sepia Snake Sigil                                  Magic-User   3
+Forgotten Realms    Skull Watch                                        Magic-User   3
+Player's Guide      Slow                                               Magic-User   3
+Wizard's Handbook   Snapping Teeth                                     Magic-User   3
+Player's Guide      Spectral Force                                     Magic-User   3
+Tome of Magic       Spirit Armor                                       Magic-User   3
+Tome of Magic       Squaring the Circle                                Magic-User   3
+Player's Guide      Suggestion                                         Magic-User   3
+Player's Guide      Tongues                                            Magic-User   3
+Player's Guide      Vampiric Touch                                     Magic-User   3
+Forgotten Realms    Ward Against Undead                                Magic-User   3
+Player's Guide      Water Breathing (Air Breathing)                    Magic-User   3
+Tome of Magic       Watery Double                                      Magic-User   3
+Forgotten Realms    Waves of Weariness                                 Magic-User   3
+Player's Guide      Wind Wall                                          Magic-User   3
+Tome of Magic       Wizard Sight                                       Magic-User   3
+Player's Guide      Wraithform                                         Magic-User   3
+Drow Guide          Acid Bolt                                          Magic-User   4
+Drow Guide          Backlash                                           Magic-User   4
+Forgotten Realms    Beltyn's Burning Blood                             Magic-User   4
+Forgotten Realms    Caligarde's Claw                                   Magic-User   4
+Player's Guide      Charm Monster                                      Magic-User   4
+Player's Guide      Confusion                                          Magic-User   4
+Player's Guide      Contagion                                          Magic-User   4
+Player's Guide      Detect Scrying                                     Magic-User   4
+Player's Guide      Dig                                                Magic-User   4
+Tome of Magic       Dilation I                                         Magic-User   4
+Player's Guide      Dimension Door                                     Magic-User   4
+Tome of Magic       Divination Enhance                                 Magic-User   4
+Wizard's Handbook   Duplicate                                          Magic-User   4
+Player's Guide      Emotion                                            Magic-User   4
+Player's Guide      Enchanted Weapon                                   Magic-User   4
+Forgotten Realms    Encrypt                                            Magic-User   4
+Player's Guide      Enervation                                         Magic-User   4
+Player's Guide      Evard's Black Tentacles                            Magic-User   4
+Player's Guide      Extension I                                        Magic-User   4
+Tome of Magic       Far Reaching II                                    Magic-User   4
+Player's Guide      Fear                                               Magic-User   4
+Wizard's Handbook   Fire Aura                                          Magic-User   4
+Player's Guide      Fire Charm                                         Magic-User   4
+Forgotten Realms    Fire Gate                                          Magic-User   4
+Red Wizard          Fire Lance                                         Magic-User   4
+Player's Guide      Fire Shield                                        Magic-User   4
+Player's Guide      Fire Trap                                          Magic-User   4
+Player's Guide      Fumble                                             Magic-User   4
+Tome of Magic       Greater Malison                                    Magic-User   4
+Player's Guide      Hallucinatory Terrain                              Magic-User   4
+Wizard's Handbook   Halo of Eyes                                       Magic-User   4
+Player's Guide      Ice Storm                                          Magic-User   4
+Player's Guide      Illusionary Wall                                   Magic-User   4
+Forgotten Realms    Ilyyker's Mantle                                   Magic-User   4
+Player's Guide      Improved Invisibilty                               Magic-User   4
+Player's Guide      Leomund's Secure Shelter                           Magic-User   4
+Tome of Magic       Locate Creature                                    Magic-User   4
+Player's Guide      Magic Mirror                                       Magic-User   4
+Tome of Magic       Mask of Death                                      Magic-User   4
+Player's Guide      MassmorPlayer's Guide                              Magic-User   4
+Player's Guide      Minor Creation                                     Magic-User   4
+Player's Guide      Minor Globe of Invulnerability                     Magic-User   4
+Tome of Magic       Minor Spell Turning                                Magic-User   4
+Forgotten Realms    Missile Mastery                                    Magic-User   4
+Player's Guide      Monster Summoning II                               Magic-User   4
+Tome of Magic       Mordenkainen's Celerity                            Magic-User   4
+Wizard's Handbook   Otiluke's Dispelling Screen                        Magic-User   4
+Player's Guide      Otiluke's Resilient Sphere                         Magic-User   4
+Player's Guide      Phantasmal Killer                                  Magic-User   4
+Forgotten Realms    Phase Trap                                         Magic-User   4
+Forgotten Realms    Plague                                             Magic-User   4
+Player's Guide      Plant Growth                                       Magic-User   4
+Player's Guide      Polymorph Other                                    Magic-User   4
+Player's Guide      Polymorph Self                                     Magic-User   4
+Red Wizard          Protection from All Elementals, 10'r               Magic-User   4
+Red Wizard          Protection from All Undead, 5"                     Magic-User   4
+Red Wizard          Protection from Breath Weapons (Dragon)            Magic-User   4
+Red Wizard          Protection from Breath Weapons (Nondragon)         Magic-User   4
+Red Wizard          Protection from Cold, 15"R                         Magic-User   4
+Red Wizard          Protection from Fire, 15"R                         Magic-User   4
+Red Wizard          Protection from Gas, 5"R                           Magic-User   4
+Red Wizard          Protection from Mechanical Traps                   Magic-User   4
+Red Wizard          Protection from Petrification, 10'R                Magic-User   4
+Red Wizard          Protection from Possession, 10'R                   Magic-User   4
+Red Wizard          Protection from Shapechangers, 10'R                Magic-User   4
+Player's Guide      Rainbow Pattern                                    Magic-User   4
+Player's Guide      Rary's Mnemonic Enhancer                           Magic-User   4
+Player's Guide      Remove Curse (Bestow Curse)                        Magic-User   4
+Player's Guide      Shadow Monsters                                    Magic-User   4
+Player's Guide      Shout                                              Magic-User   4
+Player's Guide      Solid Fog                                          Magic-User   4
+Forgotten Realms    Spectral Wings                                     Magic-User   4
+Forgotten Realms    Spendelard's Chaser                                Magic-User   4
+Player's Guide      Stoneskin                                          Magic-User   4
+Drow Guide          Stop                                               Magic-User   4
+Tome of Magic       Summon Lycanthrope                                 Magic-User   4
+Tome of Magic       There / Not There                                  Wild Magic   4
+Forgotten Realms    Thunderlance                                       Magic-User   4
+Tome of Magic       Thunder Staff                                      Magic-User   4
+Red Wizard          Turn Magic                                         Magic-User   4
+Tome of Magic       Turn Pebble to Boulder (or Reverse)                Magic-User   4
+Tome of Magic       Unluck                                             Wild Magic   4
+Player's Guide      Vacancy                                            Magic-User   4
+Player's Guide      Wall of Fire                                       Magic-User   4
+Player's Guide      Wall of Ice                                        Magic-User   4
+Forgotten Realms    Wall of Sand                                       Magic-User   4
+Forgotten Realms    Watchware                                          Magic-User   4
+Wizard's Handbook   Wind Breath                                        Magic-User   4
+Player's Guide      Wizard Eye                                         Magic-User   4
+Player's Guide      Advanced Illusion                                  Magic-User   5
+Player's Guide      Airy Water                                         Magic-User   5
+Player's Guide      Animal Growth (or Reverse)                         Magic-User   5
+Player's Guide      Animate Dead                                       Magic-User   5
+Player's Guide      Avoidance (or Reverse)                             Magic-User   5
+Player's Guide      Bigby's Interposing Hand                           Magic-User   5
+Forgotten Realms    Bewigental's Fleeting Journey                      Magic-User   5
+Player's Guide      Chaos                                              Magic-User   5
+Player's Guide      Cloudkill                                          Magic-User   5
+Player's Guide      Cone of Cold                                       Magic-User   5
+Player's Guide      Conjure Elemental                                  Magic-User   5
+Player's Guide      Contact Outer Plane                                Magic-User   5
+Player's Guide      Demi-Shadow Monsters                               Magic-User   5
+Forgotten Realms    Disguise Undead                                    Magic-User   5
+Player's Guide      Dismissal                                          Magic-User   5
+Player's Guide      Distance Distortion                                Magic-User   5
+Player's Guide      Domination                                         Magic-User   5
+Player's Guide      Dream (or Reverse)                                 Magic-User   5
+Player's Guide      Extension II                                       Magic-User   5
+Player's Guide      Fabricate                                          Magic-User   5
+Player's Guide      False Vision                                       Magic-User   5
+Tome of Magic       Far Reaching III                                   Magic-User   5
+Player's Guide      Feeblemind                                         Magic-User   5
+Red Wizard          Fire Stones                                        Magic-User   5
+Wizard's Handbook   Force Shapechange                                  Magic-User   5
+Player's Guide      Hold Monster                                       Magic-User   5
+Forgotten Realms    Improved Skull Watch                               Magic-User   5
+Wizard's Handbook   Invulnerability to Normal Weapons                  Magic-User   5
+Forgotten Realms    Ironguard                                          Magic-User   5
+Tome of Magic       Khazid's Procurement                               Magic-User   5
+Wizard's Handbook   Know Value                                         Magic-User   5
+Player's Guide      Leomund's Lamentable Belaborment                   Magic-User   5
+Player's Guide      Leomund's Secret Chest                             Magic-User   5
+Tome of Magic       Lower Resistance                                   Magic-User   5
+Player's Guide      Magic Jar                                          Magic-User   5
+Tome of Magic       Magic Staff                                        Magic-User   5
+Player's Guide      Major Creation                                     Magic-User   5
+Tome of Magic       Mind Fog                                           Magic-User   5
+Player's Guide      Monster Summoning III                              Magic-User   5
+Player's Guide      Mordenkainen's Faithful Hound                      Magic-User   5
+Wizard's Handbook   Morderkainen's Private Sanctum                     Magic-User   5
+Wizard's Handbook   Mummy Rot                                          Magic-User   5
+Forgotten Realms    Nulathoe's Ninemen                                 Magic-User   5
+Player's Guide      Passwall                                           Magic-User   5
+Drow Guide          Passweb                                            Magic-User   5
+Forgotten Realms    Presper's Moonbow                                  Magic-User   5
+Red Wizard          Protection from Acid                               Magic-User   5
+Red Wizard          Protection from Magical traps, 5'                  Magic-User   5
+Wizard's Handbook   Rary's Telepathic Bond                             Magic-User   5
+Tome of Magic       Safeguarding                                       Magic-User   5
+Forgotten Realms    Secure                                             Magic-User   5
+Player's Guide      Seeming                                            Magic-User   5
+Player's Guide      Sending                                            Magic-User   5
+Player's Guide      Shadow Door                                        Magic-User   5
+Player's Guide      Shadow Magic                                       Magic-User   5
+Forgotten Realms    Shroud of Flame                                    Magic-User   5
+Forgotten Realms    Snilloc's Major Missile                            Magic-User   5
+Red Wizard          Spell Immunity                                     Magic-User   5
+Player's Guide      Stone Shape                                        Magic-User   5
+Player's Guide      Summon Shadow                                      Magic-User   5
+Player's Guide      Telekinesis                                        Magic-User   5
+Player's Guide      Teleport                                           Magic-User   5
+Wizard's Handbook   Throbbing Bones                                    Magic-User   5
+Player's Guide      Transmute Rock to Mud (Or Reverse)                 Magic-User   5
+Tome of Magic       Von Gasik's Refusal                                Magic-User   5
+Tome of Magic       Vortex                                             Wild Magic   5
+Wizard's Handbook   Wall of Bones                                      Magic-User   5
+Player's Guide      Wall of Force                                      Magic-User   5
+Player's Guide      Wall of Iron                                       Magic-User   5
+Player's Guide      Wall of Stone                                      Magic-User   5
+Tome of Magic       Waveform                                           Wild Magic   5
+Red Wizard          Animate Dead Monsters                              Magic-User   6
+Player's Guide      Anti-Magic Shell                                   Magic-User   6
+Tome of Magic       Augmentation II                                    Magic-User   6
+Player's Guide      Bigby's Forceful Hand                              Magic-User   6
+Wizard's Handbook   Blackmantle                                        Magic-User   6
+Forgotten Realms    Blade of Doom                                      Magic-User   6
+Tome of Magic       Bloodstone Spectral Steed                          Magic-User   6
+Player's Guide      Chain Lightning                                    Magic-User   6
+Tome of Magic       Claws of the Umber Hulk                            Magic-User   6
+Player's Guide      Conjure Animals                                    Magic-User   6
+Player's Guide      Contingency                                        Magic-User   6
+Player's Guide      Control Weather                                    Magic-User   6
+Red Wizard          Control Winds                                      Magic-User   6
+Wizard's Handbook   Dead Man's Eyes                                    Magic-User   6
+Player's Guide      Death Fog                                          Magic-User   6
+Player's Guide      Death Spell                                        Magic-User   6
+Player's Guide      Demi-Shadow Magic                                  Magic-User   6
+Tome of Magic       Dilation II                                        Magic-User   6
+Player's Guide      Disintegrate                                       Magic-User   6
+Wizard's Handbook   Dragon Scales                                      Magic-User   6
+Player's Guide      Enchant an Item                                    Magic-User   6
+Player's Guide      Ensnarement                                        Magic-User   6
+Player's Guide      Extension III                                      Magic-User   6
+Player's Guide      Eyebite                                            Magic-User   6
+Tome of Magic       Forest's Fiery Constriction                        Magic-User   6
+Player's Guide      Geas                                               Magic-User   6
+Player's Guide      Glassee                                            Magic-User   6
+Player's Guide      Globe of Invulnerability                           Magic-User   6
+Forgotten Realms    Grimwald's Greymantle                              Magic-User   6
+Player's Guide      Guards & Wards                                     Magic-User   6
+Forgotten Realms    Imbue Undead with Spell Ability                    Magic-User   6
+Player's Guide      Invisible Stalker                                  Magic-User   6
+Wizard's Handbook   Invulnerability to Magic Weapons                   Magic-User   6
+Player's Guide      Legend Lore                                        Magic-User   6
+Forgotten Realms    Lich Touch                                         Magic-User   6
+Tome of Magic       L's Shadowy Transformance                          Magic-User   6
+Player's Guide      Lower Water (Or Reverse)                           Magic-User   6
+Player's Guide      Mass Suggestion                                    Magic-User   6
+Player's Guide      Mirage Arcana                                      Magic-User   6
+Player's Guide      Mislead                                            Magic-User   6
+Player's Guide      Monster Summoning IV                               Magic-User   6
+Player's Guide      Mordenkainen's Lucubration                         Magic-User   6
+Player's Guide      Move Earth                                         Magic-User   6
+Player's Guide      Otiluke's Freezing Sphere                          Magic-User   6
+Player's Guide      Part Water                                         Magic-User   6
+Player's Guide      Permanent Illusion                                 Magic-User   6
+Forgotten Realms    Power Word: Silence                                Magic-User   6
+Player's Guide      Programmed Illusion                                Magic-User   6
+Player's Guide      Project Image                                      Magic-User   6
+Red Wizard          Protection from Any Traps, 5'R                     Magic-User   6
+Red Wizard          Protection from Magic, 5'R                         Magic-User   6
+Forgotten Realms    Reconstruction                                     Magic-User   6
+Player's Guide      Reincarnation                                      Magic-User   6
+Player's Guide      Repulsion                                          Magic-User   6
+Player's Guide      Shades                                             Magic-User   6
+Player's Guide      Stone to Flesh (or Flesh to Stone)                 Magic-User   6
+Drow Guide          Summon Spider                                      Magic-User   6
+Forgotten Realms    Teleport Dead                                      Magic-User   6
+Player's Guide      Tenser's Transformation                            Magic-User   6
+Wizard's Handbook   Tenticles                                          Magic-User   6
+Player's Guide      Transmute Water to Dust (Or Reverse)               Magic-User   6
+Player's Guide      True Seeing                                        Magic-User   6
+Forgotten Realms    Turnshadow                                         Magic-User   6
+Player's Guide      Veil                                               Magic-User   6
+Tome of Magic       Wildshield                                         Wild Magic   6
+Tome of Magic       Wildstrike                                         Wild Magic   6
+Tome of Magic       Acid Storm                                         Magic-User   7
+Player's Guide      Banishment                                         Magic-User   7
+Player's Guide      Bigby's Grasping Hand                              Magic-User   7
+Tome of Magic       Bloodstone's F. Joining                            Magic-User   7
+Player's Guide      Charm Plants                                       Magic-User   7
+Player's Guide      Control Undead                                     Magic-User   7
+Player's Guide      Delayed Blast Fireball                             Magic-User   7
+Player's Guide      Drawmij's Instant Summons                          Magic-User   7
+Player's Guide      Duo-Dimension                                      Magic-User   7
+Red Wizard          Find the Path                                      Magic-User   7
+Player's Guide      Finger of Death                                    Magic-User   7
+Player's Guide      Forcecage                                          Magic-User   7
+Forgotten Realms    Gemjump                                            Magic-User   7
+Tome of Magic       Hatch Stone / Egg                                  Magic-User   7
+Tome of Magic       Hornung's Surge Selector                           Wild Magic   7
+Tome of Magic       Intensify Summoning                                Magic-User   7
+Forgotten Realms    Khelben's Warding Whip                             Magic-User   7
+Player's Guide      Limited Wish                                       Magic-User   7
+Tome of Magic       Malec-Keth's Flame Fist                            Magic-User   7
+Player's Guide      Mass Invisibility                                  Magic-User   7
+Player's Guide      Monster Summoning V                                Magic-User   7
+Player's Guide      Mordenkainen's Magnificent Mansion                 Magic-User   7
+Player's Guide      Mordenkainen's Sword                               Magic-User   7
+Player's Guide      Phase Door                                         Magic-User   7
+Player's Guide      Power Word: Stun                                   Magic-User   7
+Player's Guide      Prismatic Spray                                    Magic-User   7
+Player's Guide      Reverse Gravity                                    Magic-User   7
+Forgotten Realms    Ruby Ray of Reversal                               Magic-User   7
+Player's Guide      Sequester                                          Magic-User   7
+Tome of Magic       Shadowcat                                          Magic-User   7
+Player's Guide      Shadow Walk                                        Magic-User   7
+Player's Guide      Simulacrum                                         Magic-User   7
+Forgotten Realms    Spectral guard                                     Magic-User   7
+Tome of Magic       Spell Shape                                        Wild Magic   7
+Forgotten Realms    Spelltrap                                          Magic-User   7
+Player's Guide      Spell Turning                                      Magic-User   7
+Player's Guide      Statue                                             Magic-User   7
+Tome of Magic       Steal Enchantment                                  Magic-User   7
+Red Wizard          Stone Tell                                         Magic-User   7
+Tome of Magic       Suffocate                                          Magic-User   7
+Player's Guide      Teleport without Error                             Magic-User   7
+Forgotten Realms    The Simbal's S-dweomer                             Magic-User   7
+Player's Guide      Vanish                                             Magic-User   7
+Drow Guide          Vipergout                                          Magic-User   7
+Player's Guide      Vision                                             Magic-User   7
+Wizard's Handbook   Zombie-Double                                      Magic-User   7
+Tome of Magic       Ab's Horrid Wilting                                Magic-User   8
+Player's Guide      Antipathy-Sympathy                                 Magic-User   8
+Tome of Magic       Airboat                                            Magic-User   8
+Player's Guide      Bigby's Clenched Fist                              Magic-User   8
+Player's Guide      Binding                                            Magic-User   8
+Player's Guide      Clone                                              Magic-User   8
+Wizard's Handbook   Defoliate                                          Magic-User   8
+Forgotten Realms    Death Link                                         Magic-User   8
+Drow Guide          Death Spider                                       Magic-User   8
+Player's Guide      Demand                                             Magic-User   8
+Wizard's Handbook   Fear Ward                                          Magic-User   8
+Red Wizard          Fire Storm                                         Magic-User   8
+Forgotten Realms    Gateway                                            Magic-User   8
+Player's Guide      Glassteel                                          Magic-User   8
+Forgotten Realms    Great Shout                                        Magic-User   8
+Forgotten Realms    Gu's Kaleidescope Strike                           Magic-User   8
+Tome of Magic       Homunculus Shield                                  Magic-User   8
+Tome of Magic       Hornung's Random Dispatcher                        Wild Magic   8
+Player's Guide      Incendiary Cloud                                   Magic-User   8
+Player's Guide      Mass Charm                                         Magic-User   8
+Player's Guide      Maze                                               Magic-User   8
+Player's Guide      Mind Blank                                         Magic-User   8
+Player's Guide      Monster Summoning VI                               Magic-User   8
+Player's Guide      Otiluke's Telekinetic Sphere                       Magic-User   8
+Player's Guide      Otto's Irresistable Dance                          Magic-User   8
+Player's Guide      Permanency                                         Magic-User   8
+Player's Guide      Polymorph Any Object                               Magic-User   8
+Player's Guide      Power Word: Blind                                  Magic-User   8
+Player's Guide      Prismatic Wall                                     Magic-User   8
+Red Wizard          Regenerate                                         Magic-User   8
+Player's Guide      Screen                                             Magic-User   8
+Player's Guide      Serten's Spell Immunity                            Magic-User   8
+Wizard's Handbook   Shadow Form                                        Magic-User   8
+Player's Guide      Sink                                               Magic-User   8
+Forgotten Realms    Spell Engine                                       Magic-User   8
+Forgotten Realms    Sunburst                                           Magic-User   8
+Player's Guide      Symbol                                             Magic-User   8
+Player's Guide      Trap the Soul                                      Magic-User   8
+Tome of Magic       Wildzone                                           Wild Magic   8
+Player's Guide      Astal Spell                                        Magic-User   9
+Player's Guide      Bigby's Crushing Hand                              Magic-User   9
+Drow Guide          Black Blade Disaster                               Magic-User   9
+Tome of Magic       Chain Contingency                                  Magic-User   9
+Player's Guide      Crystalbrittle                                     Magic-User   9
+Forgotten Realms    Dismind (Or Reverse)                               Magic-User   9
+Tome of Magic       Elemental Aura                                     Magic-User   9
+Forgotten Realms    Elminster's E. Epuration                           Magic-User   9
+Forgotten Realms    Elminster's Evasion                                Magic-User   9
+Player's Guide      Energy Drain                                       Magic-User   9
+Tome of Magic       Estate Transference                                Magic-User   9
+Player's Guide      Foresight                                          Magic-User   9
+Player's Guide      Gate                                               Magic-User   9
+Tome of Magic       Glorious Transmutation                             Magic-User   9
+Player's Guide      Imprisonment (Or Reverse)                          Magic-User   9
+Forgotten Realms    Master Undead                                      Magic-User   9
+Player's Guide      Meteor Swarm                                       Magic-User   9
+Player's Guide      Monster Summoning VII                              Magic-User   9
+Player's Guide      Mordenkainen's Disjunction                         Magic-User   9
+Player's Guide      Power Word: Kill                                   Magic-User   9
+Player's Guide      Prismatic Sphere                                   Magic-User   9
+Red Wizard          Restoration                                        Magic-User   9
+Player's Guide      Shape Change                                       Magic-User   9
+Forgotten Realms    Spell Invulnerability                              Magic-User   9
+Forgotten Realms    Spellstrike                                        Magic-User   9
+Tome of Magic       Stabilize                                          Wild Magic   9
+Player's Guide      Succor (or Reverse)                                Magic-User   9
+Player's Guide      Temporal Stasis (or Reverse)                       Magic-User   9
+Player's Guide      Time Stop                                          Magic-User   9
+Forgotten Realms    Virus Charm                                        Magic-User   9
+Tome of Magic       Wail of the Banshee                                Magic-User   9
+Player's Guide      Weird                                              Magic-User   9
+Tome of Magic       Wildfire                                           Wild Magic   9
+Tome of Magic       Wildwind                                           Wild Magic   9
+Player's Guide      Wish                                               Magic-User   9
+Forgotten Realms    World Walk                                         Magic-User   9
